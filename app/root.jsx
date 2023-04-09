@@ -35,6 +35,9 @@ export async function loader({context}) {
 }
 
 export default function App() {
+  const data = useLoaderData();
+
+  const {name} = data.layout.shop;
 
   return (
     <html lang="en">
@@ -45,7 +48,8 @@ export default function App() {
       <body>
 
         <main>
-          
+
+
           <Outlet />
 
         </main>
@@ -60,3 +64,11 @@ export default function App() {
   );
 }
 
+const LAYOUT_QUERY = `#graphql
+  query layout {
+    shop {
+      name
+      description
+    }
+  }
+`;
