@@ -35,9 +35,6 @@ export async function loader({context}) {
 }
 
 export default function App() {
-  const data = useLoaderData();
-
-  const {name} = data.layout.shop;
 
   return (
     <html lang="en">
@@ -46,21 +43,20 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <h1>Hello, {name}</h1>
-        <p>This is a custom storefront powered by Hydrogen</p>
-        <Outlet />
+
+        <main>
+          
+          <Outlet />
+
+        </main>
+        
+
+
         <ScrollRestoration />
         <Scripts />
+
       </body>
     </html>
   );
 }
 
-const LAYOUT_QUERY = `#graphql
-  query layout {
-    shop {
-      name
-      description
-    }
-  }
-`;
