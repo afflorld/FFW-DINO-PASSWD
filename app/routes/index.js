@@ -6,8 +6,8 @@ export const meta = () => {
 };
 export default function Index() {
   return (
-    <div>
-      <h3>Hello from the home page!</h3>
+    <div className="h3">
+      <h3>Cau :3</h3>
     </div>
   );
 }
