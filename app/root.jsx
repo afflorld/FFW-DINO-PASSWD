@@ -19,7 +19,7 @@ export const links = () => {
     {
       rel: 'preconnect',
       href: 'https://shop.app',
-    
+    },
     {rel: 'icon', type: 'image/svg+xml', href: favicon},
   ];
 };
@@ -46,19 +46,9 @@ export default function App() {
         <Links />
       </head>
       <body>
-
-        <main>
-
-
-          <Outlet />
-
-        </main>
-        
-
-
+        <Outlet />
         <ScrollRestoration />
         <Scripts />
-
       </body>
     </html>
   );
