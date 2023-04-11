@@ -54,7 +54,7 @@ export default function Index() {
 
   return (
  
-      <div class="game">
+      <div className="game">
         <div id="dino"></div>
         <div id="cactus"></div>
       </div>
