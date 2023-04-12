@@ -65,6 +65,32 @@ export default function Index() {
             }
     });
 
+    window.addEventListener("touchstart", (start) => {
+      //    console.log(start);
+      gameOver.style.display = "none";
+      block.classList.add("blockActive");
+      road.firstElementChild.style.animation = "roadAnimate 1.5s linear infinite";
+      cloud.firstElementChild.style.animation = "cloudAnimate 50s linear infinite";
+
+      //score
+      let playerScore = 0;
+      interval = setInterval(scoreCounter, 200);
+  });
+
+    //jump Your Character
+    window.addEventListener("touchstart", (e) => {
+        //    console.log(e);
+        if (dino.classList != "dinoActive") {
+            dino.classList.add("dinoActive");
+
+            //remove class after 0.5 seconds
+            setTimeout(() => {
+                dino.classList.remove("dinoActive");
+            }, 500);
+        }
+    });
+
+
     //'Game Over' if 'Character' hit The 'Block' 
     let result = setInterval(() => {
         let dinoBottom = parseInt(getComputedStyle(dino).getPropertyValue("bottom"));
