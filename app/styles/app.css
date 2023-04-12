@@ -1,91 +1,146 @@
-*{
-
-    margin: 0;
+* {
     padding: 0;
-
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
 }
 
-body{
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        height: 100vh;
-
-        user-select: none;
-        touch-action: none;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        outline: none;
-        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
 }
 
-.game {
-  width: 600px;
-  height: 200px;
-  border: 1px solid black;
-  margin: auto;
+#container {
+    height: 400px;
+    width: 1200px;
+    position: relative;
+    overflow: hidden;
 }
 
-#dino {
-  width: 50px;
-  height: 50px;
-  background-image: url("https://github.com/mdbootstrap/knowledge-base/blob/main/JS/games/dino-game/img/trex.png?raw=true");
-  background-size: 50px 50px;
-  position: relative;
-  top: 150px;
+#container #dino {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    bottom: 28px;
+    left: 20px;
 }
 
-.jump {
-  animation: jump 0.3s linear;
+#container #dino img {
+    height: 70px;
+    width: 70px;
 }
 
-@keyframes jump {
-  0% {
-    top: 150px;
-  }
-
-  30% {
-    top: 130px;
-  }
-
-  50% {
-    top: 80px;
-  }
-
-  80% {
-    top: 130px;
-  }
-
-  100% {
-    top: 150px;
-  }
+.dinoActive {
+    animation: animateDino 0.5s linear infinite;
 }
 
-#cactus {
-  width: 20px;
-  height: 40px;
-  position: relative;
-  top: 110px;
-  left: 580px;
+@keyframes animateDino {
 
-  background-image: url("https://github.com/mdbootstrap/knowledge-base/blob/main/JS/games/dino-game/img/cactus.png?raw=true");
-  background-size: 20px 40px;
+    0%,
+    100% {
+        bottom: 28px;
+    }
 
-  animation: block 1s infinite linear;
+    45%,
+    55% {
+        bottom: 160px;
+    }
 }
 
-@keyframes block {
-  0% {
-    left: 580px;
-  }
+#container #block {
+    height: 80px;
+    width: 125px;
+    position: absolute;
+    bottom: 20px;
+    right: -20px;
+}
 
-  100% {
-    left: -20px;
-  }
+#container #block img {
+    height: 80px;
+    width: 125px;
+}
+
+.blockActive {
+    animation: blockAnimate 1s linear infinite;
+}
+
+@keyframes blockAnimate {
+    0% {
+        right: -125px;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+#container #road {
+    height: 30px;
+    width: 1200px;
+    position: absolute;
+    bottom: 0;
+}
+
+#container #road img {
+    height: 30px;
+    width: 2000px;
+    position: absolute;
+    left: 0;
+    animation: none;
+}
+
+@keyframes roadAnimate {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -800px;
+    }
+}
+
+#container #cloud {
+    height: 80px;
+    width: 1200px;
+    border-radius: 40px;
+    position: absolute;
+    top: 30px;
+}
+
+#container #cloud img {
+    height: 80px;
+    width: 2000px;
+    position: absolute;
+    left: -2000px;
+    animation: none;
+}
+
+@keyframes cloudAnimate {
+    0% {
+        left: -2000px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+#score {
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+#gameOver {
+    display: none;
+    font-size: 70px;
+    position: absolute;
+    left: calc(50% - 181px);
+    top: calc(50% - 40px);
+    width: 362px;
+    height: 80px;
+    color: #525252;
 }
