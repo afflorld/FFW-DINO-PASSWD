@@ -49,16 +49,16 @@ body {
 }
 
 #container #block {
-    height: 80px;
-    width: 125px;
+    height: auto;
+    width: auto;
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     right: -20px;
 }
 
 #container #block img {
-    height: 80px;
-    width: 125px;
+    height: 75px;
+    width: 175px;
 }
 
 .blockActive {

@@ -54,7 +54,7 @@ export default function Index() {
     window.addEventListener("keydown", (e) => {
         //    console.log(e);
 
-        if (e.key == "ArrowUp")
+    if (e.key == "ArrowUp")
             if (dino.classList != "dinoActive") {
                 dino.classList.add("dinoActive");
 
@@ -91,8 +91,8 @@ export default function Index() {
     });
 
 
-    //'Game Over' if 'Character' hit The 'Block' 
-    let result = setInterval(() => {
+        //'Game Over' if 'Character' hit The 'Block' 
+        let result = setInterval(() => {
         let dinoBottom = parseInt(getComputedStyle(dino).getPropertyValue("bottom"));
         //    console.log("dinoBottom" + dinoBottom);
 
@@ -128,7 +128,7 @@ export default function Index() {
 
       <div id="block">
 
-        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/block.png?v=1681307617"></img>
+        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/file.png?v=1681311349"></img>
 
       </div>
 
