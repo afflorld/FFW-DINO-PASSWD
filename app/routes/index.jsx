@@ -80,22 +80,56 @@ export default function Index() {
     });
 
 
-        let result = setInterval(() => {
-        let dinoBottom = parseInt(getComputedStyle(dino).getPropertyValue("bottom"));
-        let blockLeft = parseInt(getComputedStyle(block).getPropertyValue("left"));
+    let result = setInterval(() => {
+    let dinoBottom = parseInt(getComputedStyle(dino).getPropertyValue("bottom"));
+    let blockLeft = parseInt(getComputedStyle(block).getPropertyValue("left"));
 
 
-        if (dinoBottom <= 90 && blockLeft >= 20 && blockLeft <= 145) {
-            gameOver.style.display = "block";
-            block.classList.remove("blockActive");
-            road.firstElementChild.style.animation = "none";
-            cloud.firstElementChild.style.animation = "none";
-            clearInterval(interval);
-            playerScore = 0;
-        }
-    }, 10);
+    if (dinoBottom <= 90 && blockLeft >= 20 && blockLeft <= 145) {
+        gameOver.style.display = "block";
+        block.classList.remove("blockActive");
+        road.firstElementChild.style.animation = "none";
+        cloud.firstElementChild.style.animation = "none";
+        clearInterval(interval);
+        playerScore = 0;
+    }
+}, 10);
 
+    dragElement(document.getElementById("container"));
 
+    function dragElement(elmnt) {
+      var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+      if (document.getElementById("container-header")) {
+        document.getElementById("container-header").onmousedown = dragMouseDown;
+      } else {
+        elmnt.onmousedown = dragMouseDown;
+      }
+
+    function dragMouseDown(e) {
+      e = e || window.event;
+      e.preventDefault();
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      document.onmouseup = closeDragElement;
+      document.onmousemove = elementDrag;
+    }
+
+    function elementDrag(e) {
+      e = e || window.event;
+      e.preventDefault();
+      pos1 = pos3 - e.clientX;
+      pos2 = pos4 - e.clientY;
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+      elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    }
+
+    function closeDragElement() {
+      document.onmouseup = null;
+      document.onmousemove = null;
+    }
+  }
 
  });
 
@@ -104,46 +138,69 @@ export default function Index() {
     
     <div id="container">
 
-      <div id="dino">
+      <div id="container-header">
 
-        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/dino.png?v=1681307617"></img>
+        <div className="icons">
 
-      </div>
+          <span className="red">
+          </span>
+          <span className="yellow">
+          </span>
+          <span className="green">
+          </span>
 
-      <div id="block">
+        </div>
 
-        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/file.png?v=1681311349"></img>
+        <div className="name">
 
-      </div>
+          <p>FFW Dino Game</p>
 
-      <div id="road">
-
-        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/road.png?v=1681307617"></img>
-
-      </div>
-
-      <div id="cloud">
-
-        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/cloud.jpg?v=1681307617"></img>
+        </div>
 
       </div>
 
-      <div id="score">
+      <div id="container-wrapper">
 
-        Score
-        
-        <b>00</b>
+        <div id="dino">
+
+          <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/dino.png?v=1681307617"></img>
+
+        </div>
+
+        <div id="block">
+
+          <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/file.png?v=1681311349"></img>
+
+        </div>
+
+        <div id="road">
+
+          <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/road.png?v=1681307617"></img>
+
+        </div>
+
+        <div id="cloud">
+
+          <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/cloud.jpg?v=1681307617"></img>
+
+        </div>
+
+        <div id="score">
+
+          Score
+          
+          <b>00</b>
+
+        </div>
+
+        <div id="gameOver">
+
+          Game Over
+
+        </div>
 
       </div>
-
-      <div id="gameOver">
-
-        Game Over
-
-      </div>
-
     </div>
-
 
   );
 }
