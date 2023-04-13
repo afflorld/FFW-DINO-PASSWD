@@ -91,7 +91,7 @@ body {
 
     align-self: center;
 
-    margin-left: 40%;
+    margin-left: 39.5%;
    
 
 }
@@ -216,7 +216,10 @@ body {
     width: auto;
     position: absolute;
     top: 20px;
+    left: 0;
     right: 0;
+
+    text-align: center;
 }
 
 #gameOver {

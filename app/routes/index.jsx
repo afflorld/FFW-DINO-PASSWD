@@ -28,7 +28,7 @@ export default function Index() {
 
     let scoreCounter = () => {
         playerScore++;
-        score.innerHTML = `Score <b>${playerScore}</b>`;
+        score.innerHTML = `Score <p>${playerScore}</p>`;
     }
 
 
@@ -187,15 +187,15 @@ export default function Index() {
 
         <div id="score">
 
-          Score
-          
-          <b>00</b>
+          <p>Score</p>
+
+          <p>00</p>
 
         </div>
 
         <div id="gameOver">
 
-          Game Over
+          <p>Game over</p>
 
         </div>
 
