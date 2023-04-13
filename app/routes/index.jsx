@@ -1,5 +1,4 @@
-import { useContext, useEffect } from 'react';
-import {useLoaderData} from '@remix-run/react';
+import {useEffect } from 'react';
 
 export const meta = () => {
   return {
@@ -8,16 +7,8 @@ export const meta = () => {
   };
 };
 
-export async function loader({context}) {
-
-  return await context.storefront.query(COLLECTIONS_QUERY);
-
-}
-
-
 export default function Index() {
 
-    const {collections} = useLoaderData();
 
  useEffect(() => {
 
@@ -143,94 +134,71 @@ export default function Index() {
 
 
   return (
+    
+    <div id="container">
 
-    <div className='body'>
-      <div id="container">
+      <div id="container-header">
 
-        <div id="container-header">
+        <div className="icons">
 
-          <div className="icons">
-
-            <span className="red">
-            </span>
-            <span className="yellow">
-            </span>
-            <span className="green">
-            </span>
-
-          </div>
-
-          <div className="name">
-
-            <p>FFW Dino Game</p>
-
-          </div>
+          <span className="red">
+          </span>
+          <span className="yellow">
+          </span>
+          <span className="green">
+          </span>
 
         </div>
 
-        <div id="container-wrapper">
+        <div className="name">
 
-          <div id="dino">
-
-            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/dino.png?v=1681307617"></img>
-
-          </div>
-
-          <div id="block">
-
-            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/file.png?v=1681311349"></img>
-
-          </div>
-
-          <div id="road">
-
-            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/road.png?v=1681307617"></img>
-
-          </div>
-
-          <div id="cloud">
-
-            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/cloud.jpg?v=1681307617"></img>
-
-          </div>
-
-          <div id="score">
-
-            <p>Score</p>
-
-            <p>00</p>
-
-          </div>
-
-          <div id="gameOver">
-
-            <p>Game over</p>
-
-          </div>
+          <p>FFW Dino Game</p>
 
         </div>
+
       </div>
 
-        {collections.nodes.map((collection) => {
-          return (
-            <Link to={`/collections/${collection.handle}`} key={collection.id}>
-              {collection.title}
-            </Link>
-          );
-        })}
+      <div id="container-wrapper">
 
+        <div id="dino">
+
+          <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/dino.png?v=1681307617"></img>
+
+        </div>
+
+        <div id="block">
+
+          <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/file.png?v=1681311349"></img>
+
+        </div>
+
+        <div id="road">
+
+          <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/road.png?v=1681307617"></img>
+
+        </div>
+
+        <div id="cloud">
+
+          <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/cloud.jpg?v=1681307617"></img>
+
+        </div>
+
+        <div id="score">
+
+          <p>Score</p>
+
+          <p>00</p>
+
+        </div>
+
+        <div id="gameOver">
+
+          <p>Game over</p>
+
+        </div>
+
+      </div>
     </div>
   );
 }
-
-const COLLECTIONS_QUERY = `#graphql
-  query FeaturedCollections {
-    collections(first: 3, query: "collection_type:smart") {
-      nodes {
-        id
-        title
-        handle
-      }
-    }
-  }
-`;
