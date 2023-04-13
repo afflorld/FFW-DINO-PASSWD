@@ -100,7 +100,6 @@ body {
     height: 400px;
     width: 1200px;
     position: relative;
-    overflow: hidden;
 }
 
 #container-wrapper #dino {
