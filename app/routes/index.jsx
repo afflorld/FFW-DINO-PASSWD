@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from 'react';
+import {useLoaderData} from '@remix-run/react';
 
 export const meta = () => {
   return {
@@ -7,9 +8,16 @@ export const meta = () => {
   };
 };
 
+export async function loader({context}) {
+
+  return await context.storefront.query(COLLECTIONS_QUERY);
+
+}
 
 
 export default function Index() {
+
+    const {collections} = useLoaderData();
 
  useEffect(() => {
 
@@ -74,7 +82,7 @@ export default function Index() {
             dino.classList.add("dinoActive");
 
             setTimeout(() => {
-                dino.classList.remove("dinoActive");
+                dino.classList.remove("dinoActive");blockLeft
             }, 500);
         }
     });
@@ -135,72 +143,94 @@ export default function Index() {
 
 
   return (
-    
-    <div id="container">
 
-      <div id="container-header">
+    <div className='body'>
+      <div id="container">
 
-        <div className="icons">
+        <div id="container-header">
 
-          <span className="red">
-          </span>
-          <span className="yellow">
-          </span>
-          <span className="green">
-          </span>
+          <div className="icons">
+
+            <span className="red">
+            </span>
+            <span className="yellow">
+            </span>
+            <span className="green">
+            </span>
+
+          </div>
+
+          <div className="name">
+
+            <p>FFW Dino Game</p>
+
+          </div>
 
         </div>
 
-        <div className="name">
+        <div id="container-wrapper">
 
-          <p>FFW Dino Game</p>
+          <div id="dino">
+
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/dino.png?v=1681307617"></img>
+
+          </div>
+
+          <div id="block">
+
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/file.png?v=1681311349"></img>
+
+          </div>
+
+          <div id="road">
+
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/road.png?v=1681307617"></img>
+
+          </div>
+
+          <div id="cloud">
+
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/cloud.jpg?v=1681307617"></img>
+
+          </div>
+
+          <div id="score">
+
+            <p>Score</p>
+
+            <p>00</p>
+
+          </div>
+
+          <div id="gameOver">
+
+            <p>Game over</p>
+
+          </div>
 
         </div>
-
       </div>
 
-      <div id="container-wrapper">
+        {collections.nodes.map((collection) => {
+          return (
+            <Link to={`/collections/${collection.handle}`} key={collection.id}>
+              {collection.title}
+            </Link>
+          );
+        })}
 
-        <div id="dino">
-
-          <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/dino.png?v=1681307617"></img>
-
-        </div>
-
-        <div id="block">
-
-          <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/file.png?v=1681311349"></img>
-
-        </div>
-
-        <div id="road">
-
-          <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/road.png?v=1681307617"></img>
-
-        </div>
-
-        <div id="cloud">
-
-          <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/cloud.jpg?v=1681307617"></img>
-
-        </div>
-
-        <div id="score">
-
-          <p>Score</p>
-
-          <p>00</p>
-
-        </div>
-
-        <div id="gameOver">
-
-          <p>Game over</p>
-
-        </div>
-
-      </div>
     </div>
-
   );
 }
+
+const COLLECTIONS_QUERY = `#graphql
+  query FeaturedCollections {
+    collections(first: 3, query: "collection_type:smart") {
+      nodes {
+        id
+        title
+        handle
+      }
+    }
+  }
+`;
