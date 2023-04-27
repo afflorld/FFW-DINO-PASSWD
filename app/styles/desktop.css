@@ -1,0 +1,43 @@
+@import url(./dino.css);
+@import url(./countdown.css);
+@import url(./date.css);
+
+@font-face {
+    font-family: "inter-variable";
+    src: url(https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Inter-VariableFont_slnt_wght.ttf?v=1682629096);
+}
+
+.red{
+
+    background-color: #FF605C;
+
+}
+
+.yellow{
+
+    background-color: #FFBD44;
+
+}
+
+.green{
+
+    background-color: #00CA4E;
+
+}
+
+
+.text-wrapper{
+
+    display: flex;
+
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    justify-content: center;
+    justify-items: center;
+
+    align-content: center;
+    align-items: center;
+
+
+}

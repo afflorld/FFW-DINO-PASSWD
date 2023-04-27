@@ -8,6 +8,7 @@ import {
 } from '@remix-run/react';
 import styles from './styles/app.css';
 import favicon from '../public/favicon.svg';
+import { Seo } from '@shopify/hydrogen';
 
 export const links = () => {
   return [
@@ -34,7 +35,9 @@ export async function loader({context}) {
   return {layout};
 }
 
+
 export default function App() {
+
   const data = useLoaderData();
 
   const {name} = data.layout.shop;
@@ -42,6 +45,7 @@ export default function App() {
   return (
     <html lang="en">
       <head>
+        <Seo />
         <Meta />
         <Links />
       </head>

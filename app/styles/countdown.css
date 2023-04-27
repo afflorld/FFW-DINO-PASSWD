@@ -1,0 +1,33 @@
+.countdown{
+
+    position: absolute;
+
+    background-image: url(https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Timer_border_bigger_resolution.png?v=1681664859);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    top: 1%;
+    left: 78%;
+}
+
+.countdown-wrapper{
+
+    width: 20vw;
+    height: 20vh;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+
+}
+

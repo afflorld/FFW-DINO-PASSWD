@@ -1,0 +1,29 @@
+.date{
+
+    position: absolute;
+
+    width: 3vw;
+
+    top: 1%;
+    left: 93.5%;
+
+    font-family: "inter-variable";
+
+
+
+}
+
+.date img{
+
+
+    height: 2.2vh;
+    width: 2.2vw;
+
+
+}
+
+.date img , p{
+
+    padding: 3px;
+
+}
