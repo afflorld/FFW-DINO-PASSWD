@@ -129,6 +129,7 @@ return (
         
         <div className="Dekstop">
 
+            <Game />
 
         </div>
 
@@ -146,13 +147,19 @@ return (
             <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/7_JULY_2022.png?v=1681664660"></img>
             <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/8_JULY_2022.png?v=1681664661"></img>
             <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/8_JULY_2022.png?v=1681664661"></img>
-            <img src=""></img>
-            <img src=""></img>
-            <img src=""></img>
-            <img src=""></img>
-            <img src=""></img>
-            <img src=""></img>
-
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/9_CT_2022.png?v=1681664660"></img>
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/10_NOV_2022.png?v=1681664661"></img>
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/11_NOV_2022.png?v=1681664660"></img>
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/12_NOV_2022.png?v=1681664660"></img>
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/13_NOV_2022.png?v=1681664661"></img>
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/14_NOV_2022.png?v=1681664660"></img>
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/15_NOV_2022.png?v=1681664660"></img>
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/16_NOV_2022.png?v=1681664660"></img>
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/17_DEC_2022.png?v=1681664660"></img>
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/18_APRIL_2023.png?v=1681664661"></img>
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/19_ERROR_444.png?v=1681664661"></img>
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/19.png?v=1681664755"></img>
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/20.png?v=1681664755"></img>
 
         </div>
 

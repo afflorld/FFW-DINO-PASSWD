@@ -211,8 +211,19 @@
     flex-wrap: nowrap;
 
     top: 88%;
+    left: 100%;
+
+    animation: movement 75s infinite forwards;
 
 }
+
+@keyframes movement{
+
+    from{transform: translateX(0%);}
+    to{transform: translateX(-100%);}
+}
+
+
 
 .footer img{
 
