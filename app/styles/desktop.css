@@ -125,7 +125,7 @@
 
     position: absolute;
 
-    top: 70%;
+    top: 72%;
     left: 3%;
 
     display: flex;
@@ -213,14 +213,14 @@
     top: 88%;
     left: 100%;
 
-    animation: movement 75s infinite forwards;
+    animation: movement 80s infinite forwards;
 
 }
 
 @keyframes movement{
 
     from{transform: translateX(0%);}
-    to{transform: translateX(-100%);}
+    to{transform: translateX(-131%);}
 }
 
 
