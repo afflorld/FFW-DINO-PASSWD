@@ -18,6 +18,8 @@
 
     user-select: none;
 
+    z-index: 10;
+
 }
 
 #container-header{

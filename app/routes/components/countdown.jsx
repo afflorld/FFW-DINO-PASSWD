@@ -5,7 +5,7 @@ export default function Countdown(){
     useEffect(() => {
 
             
-        const countDownDate = new Date("May 2, 2023 04:44:00").getTime();
+        const countDownDate = new Date("May 8, 2024 04:44:00").getTime();
 
         const interval = setInterval(() => {
 

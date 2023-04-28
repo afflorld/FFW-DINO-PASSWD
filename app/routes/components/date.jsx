@@ -20,7 +20,7 @@ export default function Datum(){
     return(
 
 
-        <div className="text-wrapper">
+        <div className="date-wrapper">
 
             <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/OptionWiFi.png?v=1681664859"></img>
             <p id="day"></p>
