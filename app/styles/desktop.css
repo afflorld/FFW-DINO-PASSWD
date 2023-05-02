@@ -116,7 +116,6 @@
     left: 10%;
 
     font-size: 1em;
-
     color: black;
 
 }
@@ -198,8 +197,7 @@
 
 }
 
-.footer{
-
+footer{
 
     position: absolute;
 
@@ -208,24 +206,46 @@
     display: flex;
 
     flex-direction: row;
+
     flex-wrap: nowrap;
 
     top: 88%;
-    left: 100%;
+}
 
-    animation: movement 80s infinite forwards;
+.footer-img-1{
+
+    display: flex;
+
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+
+    animation: movement 80s infinite linear;
+
+    margin-left: 16%;
+}
+
+.footer-img-2{
+
+    display: flex;
+
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+
+    animation: movement 80s infinite linear;
 
 }
 
 @keyframes movement{
 
     from{transform: translateX(0%);}
-    to{transform: translateX(-131%);}
+    to{transform: translateX(-200%);}
 }
 
 
 
-.footer img{
+footer img{
 
     width: 13vw;
     height: 10vh;

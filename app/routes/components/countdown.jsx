@@ -5,7 +5,7 @@ export default function Countdown(){
     useEffect(() => {
 
             
-        const countDownDate = new Date("May 8, 2024 04:44:00").getTime();
+        const countDownDate = new Date("May 8, 2023 04:44:00").getTime();
 
         const interval = setInterval(() => {
 
@@ -17,9 +17,9 @@ export default function Countdown(){
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        document.getElementById("Countdown-top").innerHTML = days + ":";
-        document.getElementById("Countdown-top-half").innerHTML = hours + ":";
-        document.getElementById("Countdown-bottom-half").innerHTML = minutes + ":";
+        document.getElementById("Countdown-top").innerHTML = days + " :";
+        document.getElementById("Countdown-top-half").innerHTML = hours + " :";
+        document.getElementById("Countdown-bottom-half").innerHTML = minutes + " :";
         document.getElementById("Countdown-bottom").innerHTML = seconds;
 
         if (distance < 0) {
