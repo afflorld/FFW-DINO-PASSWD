@@ -1,6 +1,7 @@
 @import url(./dino.css);
 @import url(./countdown.css);
 @import url(./date.css);
+@import url(./products.css);
 
 @font-face {
     font-family: "inter-variable";
@@ -222,7 +223,7 @@ footer{
 
     animation: movement 80s infinite linear;
 
-    margin-left: 16%;
+    margin-left: -1%;
 }
 
 .footer-img-2{
@@ -240,7 +241,7 @@ footer{
 @keyframes movement{
 
     from{transform: translateX(0%);}
-    to{transform: translateX(-200%);}
+    to{transform: translateX(-100%);}
 }
 
 

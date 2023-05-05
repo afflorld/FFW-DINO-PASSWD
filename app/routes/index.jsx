@@ -7,33 +7,50 @@ export const meta = () => {
   };
 };
 
-import {useLoaderData} from '@remix-run/react';
+export default function Index() {
+
+  return (
+    
+    <Desktop />
+
+  );
+}
 
 export async function loader({context}) {
+  
   const PRODUCTS_QUERY = `#graphql
     query products {
-      products(first: 2) {
+      products(first: 5) {
         edges {
           node {
             id
             title
+            media(first: 1) {
+              nodes{
+              ... on MediaImage {
+                mediaContentType
+                image {
+                  id
+                  url
+                  altText
+                  width
+                  height
+                }
+              }
+              ... on Model3d {
+                id
+                mediaContentType
+                sources {
+                  mimeType
+                  url
+                }
+              }
+            }
+            }
+            }
           }
         }
       }
-    }
   `;
   return await context.storefront.query(PRODUCTS_QUERY)
-}
-
-export default function Index() {
-
-
-  const {products} = useLoaderData();
-  console.log(products);
-
-  return (
- 
-    <Desktop />
-
-  );
 }

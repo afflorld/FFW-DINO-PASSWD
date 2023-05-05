@@ -1,6 +1,7 @@
 import Game from "./game";
 import Countdown from "./countdown";
 import Datum from "./date";
+import Gallery from "./products";
 
 export default function Desktop(){
 
@@ -129,7 +130,11 @@ return (
         
         <div className="Dekstop">
 
+
             <Game />
+                
+            <Gallery />
+            
 
         </div>
 
