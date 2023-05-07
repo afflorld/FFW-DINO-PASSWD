@@ -133,7 +133,7 @@ return (
 
             <Game />
                 
-            <Gallery />
+   
             
 
         </div>
@@ -164,7 +164,6 @@ return (
                 <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/17_DEC_2022.png?v=1681664660"></img>
                 <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/18_APRIL_2023.png?v=1681664661"></img>
                 <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/19_ERROR_444.png?v=1681664661"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/19.png?v=1681664755"></img>
                 <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/20.png?v=1681664755"></img>
             
             </div>
@@ -193,7 +192,6 @@ return (
                 <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/17_DEC_2022.png?v=1681664660"></img>
                 <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/18_APRIL_2023.png?v=1681664661"></img>
                 <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/19_ERROR_444.png?v=1681664661"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/19.png?v=1681664755"></img>
                 <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/20.png?v=1681664755"></img>
             
             </div>
