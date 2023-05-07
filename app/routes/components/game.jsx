@@ -3,7 +3,55 @@ import {useEffect } from 'react';
 
 export default function Game(){
 
+  //Start function of game very lazy
+
+      function Start() {
+
+      const start = document.querySelector(".game-start");
+
+        start.style.display = "none";
+
+
+      const game = document.querySelector(".game");
+
+        game.style.display = "block";
+
+      const resize = document.querySelector("#container-wrapper-dino");
+
+        resize.style.width = '94vw';
+
+        resize.style.height = '90vh';
+
+      const location = document.querySelector("#container");
+
+        location.style.top = '3%';
+        location.style.left = '3%';
+    }
+
+    function Stop(){
+
+
+    const start = document.querySelector(".game-start");
+
+      start.style.display = "grid";
+
+
+    const game = document.querySelector(".game");
+
+      game.style.display = "none";
+
+    const resize = document.querySelector("#container-wrapper-dino");
+
+      resize.style.width = '20vw';
+
+      resize.style.height = '24vh';
+
+  }
+
+
 useEffect(() => {
+
+  //Game 
 
     let dino = document.querySelector("#dino");
     let block = document.querySelector("#block");
@@ -84,6 +132,8 @@ useEffect(() => {
     }
 }, 10);
 
+  //Movable container
+
       var container = document.getElementById("container");
       dragElement(container);
 
@@ -133,9 +183,9 @@ useEffect(() => {
 
           <div className="icons">
 
-            <span className='red'></span>
+            <span className='red' onClick={Stop}></span>
             <span className='yellow'></span>
-            <span className='green'></span>
+            <span className='green' onClick={Start}></span>
 
 
           </div>
@@ -150,44 +200,56 @@ useEffect(() => {
 
         <div id="container-wrapper-dino">
 
-          <div id="dino">
+          <div className='game-start'>
 
-            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/dino.png?v=1681307617"></img>
+            <p>
+                Press Green Button to play
+            </p>
 
-          </div>
-
-          <div id="block">
-
-            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/file.png?v=1681311349"></img>
 
           </div>
 
-          <div id="road">
+          <div className='game'>
 
-            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/road.png?v=1681307617"></img>
+            <div id="dino">
+
+              <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/dino.png?v=1681307617"></img>
+
+            </div>
+
+            <div id="block">
+
+              <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/file.png?v=1681311349"></img>
+
+            </div>
+
+            <div id="road">
+
+              <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/road.png?v=1681307617"></img>
+
+            </div>
+
+            <div id="cloud">
+
+              <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/cloud.jpg?v=1681307617"></img>
+
+            </div>
+
+            <div id="score">
+
+              <p>Score</p>
+
+              <p>00</p>
+
+            </div>
+
+            <div id="gameOver">
+
+              <p>Game over</p>
+
+            </div>
 
           </div>
-
-          <div id="cloud">
-
-            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/cloud.jpg?v=1681307617"></img>
-
-          </div>
-
-          <div id="score">
-
-            <p>Score</p>
-
-            <p>00</p>
-
-          </div>
-
-          <div id="gameOver">
-
-            <p>Game over</p>
-
-          </div>
-
 
         </div>
 
