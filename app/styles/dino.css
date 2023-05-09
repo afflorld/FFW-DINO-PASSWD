@@ -1,3 +1,11 @@
+.green-text{
+
+
+    color: #00CA4E;
+
+
+}
+
 #container{
 
     top: 3%;
@@ -159,7 +167,7 @@
 
 #container-wrapper-dino #road img {
     height: 30px;
-    width: 2000px;
+    width: 3000px;
     position: absolute;
     left: 0;
     animation: none;
@@ -224,4 +232,13 @@
     color: #525252;
 
     text-align: center;
+}
+
+#gameStart{
+
+    position: absolute;
+    font-size: 2em;
+    left: calc(50% - 181px);
+    top: calc(50% - 40px);
+    color: #525252;
 }

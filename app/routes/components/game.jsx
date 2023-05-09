@@ -26,6 +26,8 @@ export default function Game(){
 
         location.style.top = '3%';
         location.style.left = '3%';
+
+        location.style.zIndex = '30';
     }
 
     function Stop(){
@@ -46,6 +48,10 @@ export default function Game(){
 
       resize.style.height = '24vh';
 
+    const location = document.querySelector("#container");
+
+      location.style.zIndex = '10';
+
   }
 
 
@@ -59,6 +65,7 @@ useEffect(() => {
     let cloud = document.querySelector("#cloud");
     let score = document.querySelector("#score");
     let gameOver = document.querySelector("#gameOver");
+    let gameStart = document.querySelector("#gameStart");
 
     let interval = null;
     let playerScore = 0;
@@ -76,6 +83,7 @@ useEffect(() => {
             block.classList.add("blockActive");
             road.firstElementChild.style.animation = "roadAnimate 1.5s linear infinite";
             cloud.firstElementChild.style.animation = "cloudAnimate 50s linear infinite";
+            gameStart.style.display = "none";
 
             let playerScore = 0;
             interval = setInterval(scoreCounter, 200);
@@ -203,7 +211,7 @@ useEffect(() => {
           <div className='game-start'>
 
             <p>
-                Press Green Button to play
+                Press the <span className='green-text'>Green</span> Button to play
             </p>
 
 
@@ -243,9 +251,16 @@ useEffect(() => {
 
             </div>
 
+            <div id='gameStart'>
+
+              <p>Use space to start the</p>
+              <p>Use up-arrow to jump</p>
+
+            </div>
+
             <div id="gameOver">
 
-              <p>Game over</p>
+              <p>Try To Fly Higher!</p>
 
             </div>
 
