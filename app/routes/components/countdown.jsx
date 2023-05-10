@@ -29,9 +29,6 @@ export default function Countdown(){
             document.getElementById("Countdown-middle").innerHTML = "IS";
             document.getElementById("Countdown-bottom-half").innerHTML = "";
             document.getElementById("Countdown-bottom").innerHTML = "HERE!";
-            document.getElementById("Countdown-between_1").innerHTML = "";
-            document.getElementById("Countdown-between_2").innerHTML = "";
-            document.getElementById("Countdown-between_3").innerHTML = "";
         }
         }, 1000);
 

@@ -13,7 +13,7 @@ function ProductGallery({media}) {
     EXTERNAL_VIDEO: 'ExternalVideo',
   };
   return (
-    <div>
+    <div className="row-flex">
       {media.map((med, i) => {
         let extraProps = {};
         if (med.mediaContentType === 'MODEL_3D') {
@@ -33,9 +33,7 @@ function ProductGallery({media}) {
           },
         };
         return (
-          <div
-            key={data.id || data.image.id}
-          >
+          <div key={data.id || data.image.id}>
             <MediaFile
               tabIndex="0"
               data={data}
@@ -49,6 +47,74 @@ function ProductGallery({media}) {
 }
 
 export default function Gallery(){
+
+      function Open2(){
+
+      const hide = document.querySelector(".container-front2");
+
+        hide.style.display = "none";
+
+      const show = document.querySelector(".container-back2");
+
+        show.style.display = "flex";
+
+      const location = document.querySelector("#container2");
+
+        location.style.top = '3%';
+        location.style.left = '3%';
+
+        location.style.zIndex = '30';
+    }
+
+
+    function Close2(){
+
+      const hide = document.querySelector(".container-back2");
+
+        hide.style.display = "none";
+
+      const show = document.querySelector(".container-front2");
+
+        show.style.display = "block";
+
+      const location = document.querySelector("#container2");
+
+        location.style.zIndex = '10';
+    }
+    
+    function Open3(){
+
+      const hide = document.querySelector(".container-front3");
+
+        hide.style.display = "none";
+
+      const show = document.querySelector(".container-back3");
+
+        show.style.display = "flex";
+
+      const location = document.querySelector("#container3");
+
+        location.style.top = '3%';
+        location.style.left = '3%';
+
+        location.style.zIndex = '30';
+    }
+
+
+    function Close3(){
+
+      const hide = document.querySelector(".container-back3");
+
+        hide.style.display = "none";
+
+      const show = document.querySelector(".container-front3");
+
+        show.style.display = "block";
+
+      const location = document.querySelector("#container3");
+
+        location.style.zIndex = '10';
+    }
 
     const {products} = useLoaderData();
 
@@ -97,8 +163,7 @@ export default function Gallery(){
       }
 
 });
-    
-
+  
     return(
 
         <div>
@@ -108,9 +173,9 @@ export default function Gallery(){
 
                   <div className="icons">
 
-                      <span className='red'></span>
+                      <span className='red' onClick={Close2}></span>
                       <span className='yellow'></span>
-                      <span className='green'></span>
+                      <span className='green' onClick={Open2}></span>
 
 
                   </div>
@@ -126,23 +191,53 @@ export default function Gallery(){
               </div>
 
               <div id="container-wrapper">
+              
+                <div className='container-front2'>
 
-                  <ProductGallery media={products.edges[2].node.media.nodes}/>
+                  <ProductGallery media={[products.edges[2].node.media.nodes[0]]}/>
 
+                </div>
+
+                <div className='container-back2'>
+
+                  <div className='products-showoff2'>
+
+                    <ProductGallery media={products.edges[2].node.media.nodes}/>
+
+                  </div>
+
+                  <div className='products-info'> 
+
+                    <div className='products-top-info'>
+                      <p className='products-title'>{products.edges[2].node.title}</p>
+                      <p className='products-price'>€{products.edges[2].node.variants.edges[0].node.price.amount}</p>
+                      <p className='products-status'>{products.edges[2].node.variants.edges[0].node.availbeForSale ? "" : "Sold Out"}</p>
+                    </div>
+
+                    <div className='products-description'>
+
+                      <pre>
+                        {products.edges[2].node.descriptionHtml}
+                      </pre>
+
+                    </div>
+                  </div>
+
+                </div>
 
               </div>
 
           </div>
 
-            <div id="container3">
+          <div id="container3" className='container'>
 
               <div className="container-header">
 
                   <div className="icons">
 
-                      <span className='red'></span>
+                      <span className='red' onClick={Close3}></span>
                       <span className='yellow'></span>
-                      <span className='green'></span>
+                      <span className='green' onClick={Open3}></span>
 
 
                   </div>
@@ -158,14 +253,47 @@ export default function Gallery(){
               </div>
 
               <div id="container-wrapper">
+              
+                <div className='container-front3'>
 
-                  <ProductGallery media={products.edges[1].node.media.nodes}/>
+                  <ProductGallery media={[products.edges[3].node.media.nodes[0]]}/>
 
+                </div>
+
+                <div className='container-back3'>
+
+                  <div className='products-showoff3'>
+
+                    <ProductGallery media={products.edges[3].node.media.nodes}/>
+
+                  </div>
+
+                  <div className='products-info'> 
+
+                    <div className='products-top-info'>
+                      <p className='products-title'>{products.edges[3].node.title}</p>
+                      <p className='products-price'>€{products.edges[3].node.variants.edges[0].node.price.amount}</p>
+                      <p className='products-status'>{products.edges[3].node.variants.edges[0].node.availbeForSale ? "" : "Sold Out"}</p>
+                    </div>
+
+                    <div className='products-description'>
+
+                      <pre>
+                        {products.edges[3].node.descriptionHtml}
+                      </pre>
+
+                    </div>
+                  </div>
+
+                </div>
 
               </div>
 
           </div>
+
         </div>
 
+            
     );
-}
+    
+  }

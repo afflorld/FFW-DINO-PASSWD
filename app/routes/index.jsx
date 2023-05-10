@@ -25,7 +25,33 @@ export async function loader({context}) {
           node {
             id
             title
-            media(first: 1) {
+            descriptionHtml
+            variants(first: 1){
+              edges{
+                node{
+                  id
+                  title
+                  availableForSale
+                  selectedOptions {
+                    name
+                    value
+                  }
+                  price {
+                    amount
+                    currencyCode
+                  }
+                  compareAtPrice {
+                    amount
+                    currencyCode
+                  }
+                  unitPrice {
+                    amount
+                    currencyCode
+                  }
+                  }
+                }
+            }
+            media(first: 5) {
               nodes{
               ... on MediaImage {
                 mediaContentType
