@@ -197,3 +197,79 @@
     z-index: 10;
 
 }
+
+.container-front2 .effect{
+
+    filter: blur(0px);
+
+    transition: all 2s ease-in;
+
+}
+
+.container-front2 p{
+
+    position: absolute;
+
+    top: 45%;
+    left: 20%;
+
+    transition: all 2s ease-in;
+    opacity: 0;    
+
+    cursor: pointer;
+
+    font-family: "inter-variable";
+
+    font-size: 3em;
+    color: #00CA4E;
+}
+
+.container-front2:hover p{
+
+    opacity: 1;
+}
+
+.container-front2:hover .effect{
+
+
+    filter: blur(5px);
+
+}
+
+.container-front3 .effect{
+
+    filter: blur(0px);
+
+    transition: all 1s ease-in;
+
+}
+
+.container-front3 p{
+
+    position: absolute;
+
+    top: 40%;
+    left: 25%;
+
+    transition: all 1s ease-in;
+    opacity: 0;    
+
+    cursor: pointer;
+
+    font-family: "inter-variable";
+
+    font-size: 3em;
+    color: #00CA4E;
+}
+
+.container-front3:hover p{
+
+    opacity: 1;
+}
+
+.container-front3:hover .effect{
+
+
+    filter: blur(5px);
+
+}

@@ -33,7 +33,7 @@ function ProductGallery({media}) {
           },
         };
         return (
-          <div key={data.id || data.image.id}>
+          <div key={data.id || data.image.id} className="effect">
             <MediaFile
               tabIndex="0"
               data={data}
@@ -195,6 +195,7 @@ export default function Gallery(){
                 <div className='container-front2'>
 
                   <ProductGallery media={[products.edges[2].node.media.nodes[0]]}/>
+                  <p onClick={Open2}>BUY NOW</p>
 
                 </div>
 
@@ -257,6 +258,7 @@ export default function Gallery(){
                 <div className='container-front3'>
 
                   <ProductGallery media={[products.edges[3].node.media.nodes[0]]}/>
+                  <p onClick={Open3}>BUY NOW</p>
 
                 </div>
 
