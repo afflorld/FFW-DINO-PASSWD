@@ -48,75 +48,44 @@ function ProductGallery({media}) {
 
 export default function Gallery(){
 
-      function Open2(){
+    const {products} = useLoaderData();
 
-      const hide = document.querySelector(".container-front2");
+    function Open(hide, show, container){
+        
+      const rem = document.querySelector("." + hide);
 
-        hide.style.display = "none";
+        rem.style.display = "none";
 
-      const show = document.querySelector(".container-back2");
+      const add = document.querySelector("." + show);
 
-        show.style.display = "flex";
+        add.style.display = "flex";
 
-      const location = document.querySelector("#container2");
+      const location = document.querySelector("#" + container);
 
         location.style.top = '3%';
         location.style.left = '3%';
 
         location.style.zIndex = '30';
-    }
+      }
 
 
-    function Close2(){
 
-      const hide = document.querySelector(".container-back2");
+    function Close(hide, show, container){
 
-        hide.style.display = "none";
+        const rem = document.querySelector("." + hide);
 
-      const show = document.querySelector(".container-front2");
+          rem.style.display = "none";
 
-        show.style.display = "block";
+        const add = document.querySelector("." + show);
 
-      const location = document.querySelector("#container2");
+          add.style.display = "block";
 
-        location.style.zIndex = '10';
+        const location = document.querySelector("#" + container);
+
+          location.style.zIndex = '10';
+
     }
     
-    function Open3(){
-
-      const hide = document.querySelector(".container-front3");
-
-        hide.style.display = "none";
-
-      const show = document.querySelector(".container-back3");
-
-        show.style.display = "flex";
-
-      const location = document.querySelector("#container3");
-
-        location.style.top = '3%';
-        location.style.left = '3%';
-
-        location.style.zIndex = '30';
-    }
-
-
-    function Close3(){
-
-      const hide = document.querySelector(".container-back3");
-
-        hide.style.display = "none";
-
-      const show = document.querySelector(".container-front3");
-
-        show.style.display = "block";
-
-      const location = document.querySelector("#container3");
-
-        location.style.zIndex = '10';
-    }
-
-    const {products} = useLoaderData();
 
     useEffect(() => {
 
@@ -173,9 +142,9 @@ export default function Gallery(){
 
                   <div className="icons">
 
-                      <span className='red' onClick={Close2}></span>
+                      <span className='red' onClick={() =>Close('container-back2', 'container-front2', 'container2')}></span>
                       <span className='yellow'></span>
-                      <span className='green' onClick={Open2}></span>
+                      <span className='green' onClick={() =>Open('container-front2','container-back2','container2')}></span>
 
 
                   </div>
@@ -195,7 +164,7 @@ export default function Gallery(){
                 <div className='container-front2'>
 
                   <ProductGallery media={[products.edges[2].node.media.nodes[0]]}/>
-                  <p onClick={Open2}>BUY NOW</p>
+                  <p onClick={() =>Open('container-front2', 'container-back2', 'container2')}>BUY NOW</p>
 
                 </div>
 
@@ -212,7 +181,7 @@ export default function Gallery(){
                     <div className='products-top-info'>
                       <p className='products-title'>{products.edges[2].node.title}</p>
                       <p className='products-price'>€{products.edges[2].node.variants.edges[0].node.price.amount}</p>
-                      <p className='products-status'>{products.edges[2].node.variants.edges[0].node.availbeForSale ? "" : "Sold Out"}</p>
+                      <p className='products-status'>{products.edges[2].node.variants.edges[0].node.availabeForSale ? "" : "Sold Out"}</p>
                     </div>
 
                     <div className='products-description'>
@@ -236,9 +205,9 @@ export default function Gallery(){
 
                   <div className="icons">
 
-                      <span className='red' onClick={Close3}></span>
+                      <span className='red' onClick={() =>Close('container-back3','container-front3','container3')}></span>
                       <span className='yellow'></span>
-                      <span className='green' onClick={Open3}></span>
+                      <span className='green' onClick={() => Open('container-front3','container-back3','container3')}></span>
 
 
                   </div>
@@ -258,7 +227,7 @@ export default function Gallery(){
                 <div className='container-front3'>
 
                   <ProductGallery media={[products.edges[3].node.media.nodes[0]]}/>
-                  <p onClick={Open3}>BUY NOW</p>
+                  <p onClick={() => Open('container-front3', 'container-back3', 'container3')}>BUY NOW</p>
 
                 </div>
 

@@ -240,7 +240,7 @@
 
     filter: blur(0px);
 
-    transition: all 1s ease-in;
+    transition: all .5s ease-in;
 
 }
 
@@ -251,7 +251,7 @@
     top: 40%;
     left: 25%;
 
-    transition: all 1s ease-in;
+    transition: all .5s ease-in;
     opacity: 0;    
 
     cursor: pointer;
@@ -272,4 +272,5 @@
 
     filter: blur(5px);
 
+    
 }
