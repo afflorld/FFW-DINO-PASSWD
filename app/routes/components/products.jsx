@@ -1,6 +1,9 @@
 import { MediaFile } from '@shopify/hydrogen-react';
+import {ShopPayButton} from '@shopify/hydrogen-react';
+import {ShopifyProvider} from '@shopify/hydrogen-react';
 import {useLoaderData} from '@remix-run/react';
 import {useEffect} from 'react';
+import {UseState} from 'react';
 
 function ProductGallery({media}) {
   if (!media.length) {
@@ -46,10 +49,12 @@ function ProductGallery({media}) {
   );
 }
 
+
 export default function Gallery(){
 
-    const {products} = useLoaderData();
 
+    const {products, storeDomain} = useLoaderData();
+     
     function Open(hide, show, container){
         
       const rem = document.querySelector("." + hide);
@@ -85,7 +90,19 @@ export default function Gallery(){
           location.style.zIndex = '10';
 
     }
-    
+   
+    function Product({ products }) {
+      const [selectedOptions, setSelectedOptions] = useState({});
+      const [variants, option] = products.node;
+
+      const handleOptionChange = (name, value) => {
+        setSelectedOptions({
+          ...selectedOptions,
+          [name]: value,
+        });
+    };
+
+    }
 
     useEffect(() => {
 
@@ -179,9 +196,40 @@ export default function Gallery(){
                   <div className='products-info'> 
 
                     <div className='products-top-info'>
-                      <p className='products-title'>{products.edges[2].node.title}</p>
+                      <h1 className='products-title'>{products.edges[2].node.title}</h1>
                       <p className='products-price'>€{products.edges[2].node.variants.edges[0].node.price.amount}</p>
                       <p className='products-status'>{products.edges[2].node.variants.edges[0].node.availabeForSale ? "" : "Sold Out"}</p>
+
+                      <div className='products-options2'>
+                        <div className='size'>
+                          <p>Pick a Size</p>
+                          <select>
+                            {products.edges[2].node.options.map((option) => (
+                              option.values.map((value) => (
+                                <option key={option.name + value} value={option.name + '-' + value}>
+                                  {value}
+                                </option>
+                              ))
+                            ))}
+                          </select>
+                        </div>
+                        <div className='quantity'>
+                         <p>Quantity</p>
+                          <select onChange={(e) => handleOptionChange('quantity', e.target.value)}>
+                            {[...Array(10)].map((_, i) => (
+                              <option key={i + 1} value={i + 1}>
+                                {i + 1}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                        <div className='paybtn'>
+                            <ShopPayButton 
+                            storeDomain={storeDomain} 
+                            variantIds={[products?.edges?.[2]?.node?.variants?.edges?.[0]?.node?.id]}
+                            />
+                        </div>
+                      </div>
                     </div>
 
                     <div className='products-description'>
@@ -215,7 +263,7 @@ export default function Gallery(){
                   <div className="name">
 
                       <p>
-                          {products.edges[1].node.title}
+                          {products.edges[3].node.title}
                       </p>
 
                   </div>
@@ -245,7 +293,18 @@ export default function Gallery(){
                       <p className='products-title'>{products.edges[3].node.title}</p>
                       <p className='products-price'>€{products.edges[3].node.variants.edges[0].node.price.amount}</p>
                       <p className='products-status'>{products.edges[3].node.variants.edges[0].node.availbeForSale ? "" : "Sold Out"}</p>
+
+                    <select>
+                      {products.edges[3].node.options.map((option) => (
+                        option.values.map((value) => (
+                          <option key={option.name + value} value={option.name + '-' + value}>
+                            {value}
+                          </option>
+                        ))
+                      ))}
+                    </select>
                     </div>
+
 
                     <div className='products-description'>
 
@@ -261,10 +320,9 @@ export default function Gallery(){
               </div>
 
           </div>
-
+                        
         </div>
 
             
     );
-    
-  }
+}

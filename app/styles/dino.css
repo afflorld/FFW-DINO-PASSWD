@@ -73,7 +73,7 @@
     width: 20vw;
     height: 24vh;
     position: relative;
-    background-color: white;
+    background-color: #f2efde;
 }
 
 .game-start{
@@ -91,6 +91,7 @@
     font-size: 20px;
     color: #525252;
     
+    background-color: #f2efde;
 
 
 
@@ -185,7 +186,7 @@
 
 #container-wrapper-dino #cloud {
     height: 80px;
-    width: 1200px;
+    width: 2000px;
     border-radius: 40px;
     position: absolute;
     top: 30px;

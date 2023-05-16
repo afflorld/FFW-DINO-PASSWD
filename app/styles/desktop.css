@@ -8,9 +8,10 @@
     src: url(https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Inter-VariableFont_slnt_wght.ttf?v=1682629096);
 }
 
-.desktop{
+.Desktop{
 
     overflow: hidden;
+    position: relative;
 
 }
 
