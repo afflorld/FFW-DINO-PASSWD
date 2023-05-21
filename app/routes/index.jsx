@@ -1,4 +1,4 @@
-import { json } from "react-router";
+import {json} from '@shopify/remix-oxygen';
 import Desktop from "./components/desktop.jsx";
 
 export const meta = () => {
@@ -84,10 +84,18 @@ export async function loader({context}) {
   }
 `;
 
+
+
+
+
 const {products} = await context.storefront.query(PRODUCTS_QUERY);
+
 const storeDomain = context.storefront.getShopifyDomain();
+
   return json({
+
     products,
     storeDomain,
+
   });
 }
