@@ -2,6 +2,8 @@ import { MediaFile } from '@shopify/hydrogen-react';
 import {ShopPayButton} from '@shopify/hydrogen-react';
 import {useLoaderData} from '@remix-run/react';
 import {useEffect} from 'react';
+import {useState} from 'react';
+import Index from '..';
 
 function ProductGallery({media}) {
   if (!media.length) {
@@ -51,8 +53,9 @@ function ProductGallery({media}) {
 
 export default function Gallery(){
    
-    const {products, storeDomain, selectedVariant} = useLoaderData();
-     
+    const {products, storeDomain} = useLoaderData();
+    
+
     function Open(hide, show, container){
         
       const rem = document.querySelector("." + hide);
@@ -88,7 +91,21 @@ export default function Gallery(){
           location.style.zIndex = '10';
 
     }
-   
+
+
+    const [Index, setIndex] = useState(0);
+
+    const HandleChangeSelect = (event) => {
+      const number = parseInt(event.target.selectedIndex, 10);
+      setIndex(number);
+
+    };
+
+    const variantId = products?.edges[2]?.node?.variants?.edges?.[Index]?.node?.id;
+
+
+    console.log(variantId);
+
 
     useEffect(() => {
 
@@ -189,7 +206,15 @@ export default function Gallery(){
                       <div className='products-options2'>
                         <div className='size'>
                           <p>Pick a Size</p>
-                      <p>{products.edges[2].node.options.name}</p>
+                            <select value={Index} onChange={HandleChangeSelect}>
+                              {products.edges[2].node.options.map((option) => (
+                                option.values.map((value, index) => (
+                                  <option key={option.name + value} value={index}>
+                                    {value}
+                                  </option>
+                                ))
+                              ))}
+                          </select>
                         </div>
                         <div className='quantity'>
                          <p>Quantity</p>
@@ -197,7 +222,7 @@ export default function Gallery(){
                         <div className='paybtn'>
                             <ShopPayButton 
                             storeDomain={storeDomain} 
-                            variantIds={[products?.edges?.[2]?.node?.variants?.edges?.[0]?.node?.id]}
+                            variantIds={[variantId]}
                             />
                         </div>
 

@@ -30,7 +30,7 @@ export async function loader({context}) {
             name,
             values
           }
-          variants(first: 1){
+          variants(first: 10){
             edges{
               node{
                 id
