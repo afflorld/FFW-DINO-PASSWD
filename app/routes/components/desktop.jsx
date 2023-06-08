@@ -135,10 +135,6 @@ return (
             <Game />
                 
             <Gallery />
-
-            <Cart />
-
-
             
 
         </div>

@@ -3,7 +3,7 @@ import {ShopPayButton} from '@shopify/hydrogen-react';
 import {useLoaderData} from '@remix-run/react';
 import {useEffect} from 'react';
 import {useState} from 'react';
-import Index from '..';
+
 
 function ProductGallery({media}) {
   if (!media.length) {
@@ -93,19 +93,32 @@ export default function Gallery(){
     }
 
 
-    const [Index, setIndex] = useState(0);
+    const [Index, setIndex]= useState(0);
+    const [Quantity, setQuantity] = useState(0);
 
-    const HandleChangeSelect = (event) => {
-      const number = parseInt(event.target.selectedIndex, 10);
-      setIndex(number);
+    const HandleVariantChange = (event) => {
+      const IndexNumber = parseInt(event.target.selectedIndex, 10);
+      setIndex(IndexNumber);
+
+
+    };
+
+    const HandleQuantityChange = (event) => {
+
+      const QuantityNumber = parseInt(event.target.value, 10);
+      setQuantity(QuantityNumber);
 
     };
 
     const variantId = products?.edges[2]?.node?.variants?.edges?.[Index]?.node?.id;
+    const availableForSale = products?.edges[2]?.node?.variants?.edges[Index]?.node?.availableForSale;
+    const check = availableForSale === false ? 'Sold out' : '';
 
 
+    console.log(check);
     console.log(variantId);
-
+    console.log(products?.edges?.[2]?.node?.variants?.edges?.[0]?.node?.quantityAvailable)
+    console.log(products.edges[2].node.variants.edges[0].node);
 
     useEffect(() => {
 
@@ -201,28 +214,29 @@ export default function Gallery(){
                     <div className='products-top-info'>
                       <h1 className='products-title'>{products.edges[2].node.title}</h1>
                       <p className='products-price'>€{products.edges[2].node.variants.edges[0].node.price.amount}</p>
-                      <p className='products-status'>{products.edges[2].node.variants.edges[0].node.availabeForSale ? "" : "Sold Out"}</p>
+                      <p className='products-status'>{check}</p>
 
                       <div className='products-options2'>
                         <div className='size'>
                           <p>Pick a Size</p>
-                            <select value={Index} onChange={HandleChangeSelect}>
-                              {products.edges[2].node.options.map((option) => (
-                                option.values.map((value, index) => (
-                                  <option key={option.name + value} value={index}>
-                                    {value}
-                                  </option>
-                                ))
-                              ))}
+                          <select value={Index} onChange={HandleVariantChange}>
+                            {products.edges[2].node.options.map((option) => (
+                              option.values.map((value, index) => (
+                                <option key={option.name + value} value={index}>
+                                  {value}
+                                </option>
+                              ))
+                            ))}
                           </select>
                         </div>
                         <div className='quantity'>
                          <p>Quantity</p>
+                          <input id='quantity' className='quantity' type="number" min="0" max={products.edges[2].node.variants.edges[Index].node.quantityAvailable} value={Quantity} onChange={HandleQuantityChange}/>
                         </div>
                         <div className='paybtn'>
                             <ShopPayButton 
                             storeDomain={storeDomain} 
-                            variantIds={[variantId]}
+                            variantIdsAndQuantities={[{id: variantId, quantity: Quantity}]}
                             />
                         </div>
 
