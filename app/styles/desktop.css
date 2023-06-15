@@ -279,7 +279,7 @@ footer img{
 
     font-size: 12em;
     top: 55%;
-    left: 5%;
+    left: 2%;
     transform: scale(.5, 1.5);
 
 }
@@ -287,8 +287,8 @@ footer img{
 .text3{
 
     top: 35%;
-    left: 13%;
-    font-size: 10em;
+    left: 5%;
+    font-size: 13em;
 
     transform: scale(.5,1.5);
 }
