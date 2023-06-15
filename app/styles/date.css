@@ -72,3 +72,72 @@
 }
 
 }
+
+
+@media only screen and (min-width: 850px){
+
+
+.date{
+
+    width: 3vw;
+
+    top: 1%;
+    left: 85%;
+
+
+
+}
+
+.date img{
+
+
+    height: 2.2vh;
+    width: 5.2vw;
+
+
+}
+
+.date img , p{
+
+    padding: 3px;
+
+}
+
+
+
+}
+
+@media screen and (min-width: 1280px) {
+
+
+
+    .date{
+
+
+    width: 3vw;
+
+    top: 1%;
+    left: 93.5%;
+
+
+
+}
+
+
+.date img{
+
+
+    height: 2.2vh;
+    width: 2.2vw;
+
+
+}
+
+.date img , p{
+
+    padding: 3px;
+
+}
+
+    
+}

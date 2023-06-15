@@ -353,3 +353,232 @@ footer img{
 }
 
 }
+
+@media only screen and (min-width: 850px){
+
+.stvorky{
+
+
+
+    top: -10%;
+    left: 1%;
+
+
+}
+
+
+.stvorky img{
+
+
+    width: 42vw;
+    height: 37vh;
+
+}
+
+.text1{
+
+
+    top: 20%;
+    left: 5%;
+    font-size: 1em;
+
+}
+
+.text2{
+
+
+    font-size: 17em;
+    top: 50%;
+    left: -10%;
+    transform: scale(.5, 1.5);
+
+}
+
+.text3{
+
+    top: 20%;
+    left: 6%;
+    font-size: 15em;
+
+    transform: scale(.5,1.5);
+}
+
+
+.apps{
+
+    font-size: .7em;
+
+}
+
+.apps img {
+
+    width: 8vw;
+    height: 4vh;
+
+}
+
+#shop{
+
+
+    left: 87%;
+
+    top: 20%;
+
+    text-align: center;
+
+}
+
+#files{
+
+    left: 88.5%;
+    top: 30%;
+
+}
+
+#instagram{
+
+
+    left: 88%;
+    top: 40%;
+
+}
+
+#tiktok{
+
+
+    left: 88.5%;
+    top: 50%;
+
+}
+
+footer{
+
+    top: 88%;
+}
+
+footer img{
+
+    width: 30vw;
+    height: 8vh;
+
+    padding: 5px;
+
+}
+
+}
+
+
+@media only screen and (min-width: 1280px){
+
+.stvorky{
+
+
+    position: absolute;
+
+    top: -48%;
+    left: 1%;
+
+
+}
+
+
+.stvorky img{
+
+    width: 40vw;
+    height: 130vh;
+
+}
+
+.text1{
+
+    top: 42.5%;
+    left: 10%;
+
+    font-size: 1em;
+
+}
+
+.text2{
+
+    font-size: 15em;
+
+    top: 31%;
+    left: 30%;
+
+}
+
+.text3{
+
+    top: 25%;
+    left: 45%;
+
+    font-size: 17em;
+
+    transform: scale(.5,1.5);
+}
+
+.apps{
+
+    font-size: .7em;
+}
+
+.apps img {
+
+    width: 3.5vw;
+    height: 7vh;
+
+}
+
+#shop{
+
+
+    left: 92.2%;
+
+    top: 25%;
+
+}
+
+#files{
+
+    left: 93.5%;
+    top: 37%;
+
+}
+
+#instagram{
+
+
+    left: 5%;
+    top: 75%;
+
+}
+
+#tiktok{
+
+
+    left: 11.5%;
+    top: 75%;
+
+}
+
+footer{
+
+    top: 88%;
+}
+
+.footer-img-1{
+
+    margin-left: -1%;
+}
+
+footer img{
+
+    width: 13vw;
+    height: 10vh;
+
+    padding: 5px;
+
+}
+
+
+}
