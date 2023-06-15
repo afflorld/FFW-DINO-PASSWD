@@ -269,7 +269,7 @@ footer img{
 
 
     top: 42.5%;
-    left: 8%;
+    left: 5%;
     font-size: .5em;
 
 }
@@ -277,9 +277,9 @@ footer img{
 .text2{
 
 
-    font-size: 3em;
+    font-size: 4.5em;
     top: 40%;
-    left: 8%;
+    left: 15%;
     transform: scale(.5, 1.5);
 
 }
@@ -287,8 +287,8 @@ footer img{
 .text3{
 
     top: 35%;
-    left: 15%;
-    font-size: 5em;
+    left: 28%;
+    font-size: 6em;
 
     transform: scale(.5,1.5);
 }
@@ -302,8 +302,8 @@ footer img{
 
 .apps img {
 
-    width: 5vw;
-    height: 5vh;
+    width: 6vw;
+    height: 4vh;
 
 }
 
@@ -313,14 +313,14 @@ footer img{
 
     left: 90.5%;
 
-    top: 36%;
+    top: 20%;
 
 }
 
 #files{
 
     left: 91.5%;
-    top: 45%;
+    top: 30%;
 
 }
 
