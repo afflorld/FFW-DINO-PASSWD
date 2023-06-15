@@ -248,7 +248,7 @@ footer img{
 
 
 
-    top: -30%;
+    top: -10%;
     left: 1%;
 
 
@@ -275,7 +275,7 @@ footer img{
 
 
     font-size: 11em;
-    top: 55%;
+    top: 50%;
     left: -22%;
     transform: scale(.5, 1.5);
 
@@ -345,7 +345,7 @@ footer{
 
 footer img{
 
-    width: 30vw;
+    width: 35vw;
     height: 9vh;
 
     padding: 5px;
