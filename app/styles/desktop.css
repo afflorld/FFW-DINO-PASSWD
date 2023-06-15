@@ -279,7 +279,7 @@ footer img{
 
     font-size: 11em;
     top: 55%;
-    left: -20%;
+    left: -35%;
     transform: scale(.5, 1.5);
 
 }
@@ -287,7 +287,7 @@ footer img{
 .text3{
 
     top: 22%;
-    left: -20%;
+    left: -10%;
     font-size: 9em;
 
     transform: scale(.5,1.5);
@@ -302,15 +302,15 @@ footer img{
 
 .apps img {
 
-    width: 6vw;
-    height: 4vh;
+    width: 8vw;
+    height: 5vh;
 
 }
 
 #shop{
 
 
-    left: 90.5%;
+    left: 89%;
 
     top: 20%;
 
@@ -318,7 +318,7 @@ footer img{
 
 #files{
 
-    left: 91.5%;
+    left: 90%;
     top: 30%;
 
 }
@@ -326,7 +326,7 @@ footer img{
 #instagram{
 
 
-    left: 90.5%;
+    left: 89%;
     top: 40%;
 
 }
@@ -346,7 +346,7 @@ footer{
 
 footer img{
 
-    width: 20vw;
+    width: 25vw;
     height: 10vh;
 
     padding: 5px;
