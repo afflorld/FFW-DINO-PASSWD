@@ -84,10 +84,6 @@ export async function loader({context}) {
   }
 `;
 
-
-
-
-
 const {products} = await context.storefront.query(PRODUCTS_QUERY);
 
 const storeDomain = context.storefront.getShopifyDomain();
