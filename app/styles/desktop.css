@@ -55,8 +55,6 @@
 
 .text-wrapper{
 
-
-
     display: flex;
 
     flex-wrap: nowrap;
@@ -78,38 +76,6 @@
 
 }
 
-
-.apps1{
-
-    position: absolute;
-
-    top: 15%;
-    left: 92%;
-
-    font-size: .7em;
-    
-    font-family: "inter-variable";
-    font-weight: bold;
-
-}
-
-.apps1 img{
-
-
-    width: 3.5vw;
-    height: 7vh;
-
-}
-
-.shop, .files{
-
-    padding-top: 20px;
-
-    cursor: pointer;
-
-
-}
-
 .text1{
 
     position: absolute;
@@ -119,41 +85,6 @@
 
     font-size: 1em;
     color: black;
-
-}
-
-.apps3{
-
-    position: absolute;
-
-    top: 72%;
-    left: 3%;
-
-    display: flex;
-
-    flex-direction: row;
-    flex-wrap: nowrap;
-
-    font-size: .7em;
-    font-weight: bold;
-    font-family: "inter-variable";
-
-}
-
-.apps3 img{
-
-
-    width: 3.5vw;
-    height: 3.5vw;
-
-}
-
-.instagram, .tiktok{
-
-    padding: 10px;    
-
-    cursor: pointer;
-
 
 }
 
@@ -196,6 +127,61 @@
 
 
     user-select: none;
+
+}
+
+.apps{
+
+    font-size: .7em;
+    font-family: "inter-variable";
+    font-weight: bold;
+
+}
+
+.apps img {
+
+    width: 3.5vw;
+    height: 7vh;
+
+}
+
+#shop, #files, #instagram, #tiktok{
+
+    position: absolute;
+
+    cursor: pointer;
+
+}
+
+#shop{
+
+
+    left: 92.2%;
+
+    top: 25%;
+
+}
+
+#files{
+
+    left: 93.5%;
+    top: 37%;
+
+}
+
+#instagram{
+
+
+    left: 5%;
+    top: 75%;
+
+}
+
+#tiktok{
+
+
+    left: 11.5%;
+    top: 75%;
 
 }
 
@@ -253,5 +239,119 @@ footer img{
     height: 10vh;
 
     padding: 5px;
+
+}
+
+@media only screen and (max-width: 850px){
+
+.stvorky{
+
+
+
+    top: -20%;
+    left: 1%;
+
+
+}
+
+.stvorky img{
+
+
+    width: 45vw;
+    height: 60vh;
+
+
+
+
+}
+
+.text1{
+
+
+    top: 42.5%;
+    left: 8%;
+    font-size: .7em;
+
+}
+
+.text2{
+
+
+    font-size: 10em;
+    top: 40%;
+    left: 15%;
+    transform: scale(.5, 1.5);
+
+}
+
+.text3{
+
+    top: 35%;
+    left: 28%;
+    font-size: 12em;
+
+    transform: scale(.5,1.5);
+}
+
+
+.apps{
+
+    font-size: .4em;
+
+}
+
+.apps img {
+
+    width: 5vw;
+    height: 5vh;
+
+}
+
+
+#shop{
+
+
+    left: 90.5%;
+
+    top: 36%;
+
+}
+
+#files{
+
+    left: 91.5%;
+    top: 45%;
+
+}
+
+#instagram{
+
+
+    left: 10%;
+    top: 75%;
+
+}
+
+#tiktok{
+
+
+    left: 18.5%;
+    top: 75%;
+
+}
+
+footer{
+
+    top: 88%;
+}
+
+footer img{
+
+    width: 20vw;
+    height: 10vh;
+
+    padding: 5px;
+
+}
 
 }

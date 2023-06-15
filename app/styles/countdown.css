@@ -34,3 +34,20 @@
 
 }
 
+@media screen and (max-width: 850px) {
+    
+.countdown{
+
+    top: -5%;
+    left: 67%;
+}
+
+.countdown-wrapper{
+
+    width: 30vw;
+    height: 28vh;
+    font-size: 2em;
+
+}
+
+}

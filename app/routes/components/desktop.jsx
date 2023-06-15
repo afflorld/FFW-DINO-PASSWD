@@ -3,8 +3,71 @@ import Countdown from "./countdown";
 import Datum from "./date";
 import Gallery from "./products";
 import Cart from "./cart";
+import { useEffect } from "react";
+
 
 export default function Desktop(){
+
+
+    useEffect(() => {
+
+
+    var shop = document.getElementById("shop");
+    dragElement(shop);
+
+    var files = document.getElementById("files");
+    dragElement(files);
+
+    var tiktok = document.getElementById("tiktok");
+    dragElement(tiktok)
+
+    var instagram = document.getElementById("instagram");
+    dragElement(instagram);
+
+
+
+    function dragElement(elmnt) {
+    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    var startingZIndex = parseInt(elmnt.style.zIndex) || 1;
+
+    elmnt.onmousedown = dragMouseDown;
+
+    function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        document.onmousemove = elementDrag;
+
+        elmnt.style.zIndex = startingZIndex + 1;
+    }
+
+    function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    }
+
+    function closeDragElement() {
+        document.onmouseup = null;
+        document.onmousemove = null;
+
+        elmnt.style.zIndex = 1;
+
+        
+    }
+    }
+
+
+
+    })
+
 
 return (
 
@@ -35,9 +98,9 @@ return (
 
         </div>   
 
-        <div className="apps1">
+        <div className="apps">
 
-            <div className="shop">
+            <div id="shop">
 
                 <div className="center">
 
@@ -49,7 +112,7 @@ return (
         
             </div>
 
-            <div className="files">
+            <div id="files">
 
                 <div className="center">
 
@@ -79,32 +142,39 @@ return (
 
         </div>            
 
-        <div className="apps2">
+        <div className="apps">
 
         </div>
 
-        <div className="apps3">
+        <div className="apps">
 
-            <div className="instagram">
+            <a onDoubleClick={() => window.open("https://www.instagram.com/fortyfourwings", "blank")}>
 
-                <div className="center">
+                <div id="instagram">
 
-                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Instagram-Logo.png?v=1681664860"></img>
-                    <p>INSTAGRAM</p>
+                    <div className="center">
 
-                </div>
-            </div>
+                        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Instagram-Logo.png?v=1681664860"></img>
+                        <p>INSTAGRAM</p>
 
-            <div className="tiktok">
-
-                <div className="center">
-
-                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/tiktok_logo.png?v=1681664860"></img>
-                    <p>TIKTOK</p>
+                    </div>
                 </div>
 
-            </div>
+            </a>
 
+            <a onDoubleClick={() => window.open("https://www.tiktok.com/@fortyfourwings", "blank")}>
+
+                <div id="tiktok">
+
+                    <div className="center">
+
+                        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/tiktok_logo.png?v=1681664860"></img>
+                        <p>TIKTOK</p>
+                    </div>
+
+                </div>
+
+            </a>
 
         </div>
 
@@ -130,12 +200,7 @@ return (
 
         
         <div className="Dekstop">
-
-
-            <Game />
-                
-            <Gallery />
-            
+ 
 
         </div>
 
