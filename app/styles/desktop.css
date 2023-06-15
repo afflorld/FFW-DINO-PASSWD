@@ -257,8 +257,8 @@ footer img{
 .stvorky img{
 
 
-    width: 60vw;
-    height: 50vh;
+    width: 50vw;
+    height: 40vh;
 
 
 
@@ -314,11 +314,13 @@ footer img{
 
     top: 20%;
 
+    text-align: center;
+
 }
 
 #files{
 
-    left: 89%;
+    left: 89.5%;
     top: 30%;
 
 }
@@ -334,7 +336,7 @@ footer img{
 #tiktok{
 
 
-    left: 89%;
+    left: 89.5%;
     top: 50%;
 
 }
@@ -347,7 +349,7 @@ footer{
 footer img{
 
     width: 25vw;
-    height: 10vh;
+    height: 8vh;
 
     padding: 5px;
 

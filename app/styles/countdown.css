@@ -38,15 +38,15 @@
     
 .countdown{
 
-    top: -5%;
+    top: -2%;
     left: 55%;
 }
 
 .countdown-wrapper{
 
     width: 40vw;
-    height: 35vh;
-    font-size: .7em;
+    height: 40vh;
+    font-size: 1em;
 
 }
 
