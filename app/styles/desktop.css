@@ -257,8 +257,8 @@ footer img{
 .stvorky img{
 
 
-    width: 55vw;
-    height: 60vh;
+    width: 60vw;
+    height: 50vh;
 
 
 
@@ -279,7 +279,7 @@ footer img{
 
     font-size: 11em;
     top: 55%;
-    left: -30%;
+    left: -22%;
     transform: scale(.5, 1.5);
 
 }
@@ -287,7 +287,7 @@ footer img{
 .text3{
 
     top: 22%;
-    left: -13%;
+    left: -10%;
     font-size: 8.5em;
 
     transform: scale(.5,1.5);
@@ -310,7 +310,7 @@ footer img{
 #shop{
 
 
-    left: 90%;
+    left: 88%;
 
     top: 20%;
 
@@ -326,7 +326,7 @@ footer img{
 #instagram{
 
 
-    left: 90%;
+    left: 88%;
     top: 40%;
 
 }
