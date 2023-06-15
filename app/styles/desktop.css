@@ -189,7 +189,7 @@ footer{
 
     position: absolute;
 
-    overflow: hidden;
+    overflow: hidden !important;
 
     display: flex;
 

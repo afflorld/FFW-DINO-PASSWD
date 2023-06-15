@@ -13,7 +13,7 @@ body{
 
     background-color: #f2efde;
 
-    overflow: hidden;
+    overflow: hidden !important;
 
 }
 
