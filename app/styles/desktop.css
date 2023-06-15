@@ -10,7 +10,7 @@
 
 .Desktop{
 
-    overflow: hidden;
+    overflow: hidden !important;
     position: relative;
 
 }
@@ -342,7 +342,7 @@ footer img{
 
 footer{
 
-    top: 100%;
+    top: 88%;
 }
 
 footer img{
