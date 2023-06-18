@@ -2,6 +2,7 @@
 @import url(./countdown.css);
 @import url(./date.css);
 @import url(./products.css);
+@import 'normalize.css';
 
 @font-face {
     font-family: "inter-variable";
