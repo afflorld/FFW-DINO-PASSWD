@@ -48,9 +48,10 @@
 .date{
 
     width: 3vw;
+    font-size: .6em;
 
     top: 1%;
-    left: 76%;
+    left: 81%;
 
 
 
@@ -59,8 +60,8 @@
 .date img{
 
 
-    height: 2.2vh;
-    width: 5.2vw;
+    height: 2.0vh;
+    width: 4.2vw;
 
 
 }

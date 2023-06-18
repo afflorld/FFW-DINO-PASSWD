@@ -249,7 +249,7 @@ footer img{
 
 
 
-    top: -15%;
+    top: -10%;
     left: 1%;
 
 
@@ -285,7 +285,7 @@ footer img{
 .text3{
 
     top: 23%;
-    left: 1%;
+    left: 6%;
     font-size: 6.5em;
 
     transform: scale(.5,1.5);
@@ -318,7 +318,7 @@ footer img{
 
 #files{
 
-    left: 89.5%;
+    left: 88.5%;
     top: 30%;
 
 }
@@ -334,20 +334,20 @@ footer img{
 #tiktok{
 
 
-    left: 89.5%;
+    left: 88.5%;
     top: 50%;
 
 }
 
 footer{
 
-    top: 88%;
+    top: 90%;
 }
 
 footer img{
 
-    width: 45vw;
-    height: 9vh;
+    width: 40vw;
+    height: 7vh;
 
     padding: 5px;
 
