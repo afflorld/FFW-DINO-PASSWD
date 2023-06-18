@@ -43,7 +43,7 @@
 }
 
 
-@media only screen and (min-width: 320px){
+@media only screen and (min-width: 375px){
 
 .date{
 
@@ -75,7 +75,7 @@
 }
 
 
-@media only screen and (min-width: 420px){
+@media only screen and (min-width: 576px){
 
 
 .date{
@@ -106,42 +106,8 @@
 
 }
 
-@media only screen and (min-width: 600px){
 
-
-.date{
-
-    width: 3vw;
-
-    top: 1%;
-    left: 83%;
-
-
-
-}
-
-.date img{
-
-
-    height: 2.2vh;
-    width: 5.2vw;
-
-
-}
-
-.date img , p{
-
-    padding: 3px;
-
-}
-
-
-
-}
-
-
-
-@media only screen and (min-width: 720px){
+@media only screen and (min-width: 768px){
 
 
 .date{
@@ -174,88 +140,20 @@
 
 }
 
-@media only screen and (min-width: 860px){
-
-
+@media only screen and (min-width: 1024px){
+    
 .date{
 
-    width: 3vw;
-
-    top: 1%;
-    left: 85%;
-
-
-
-}
-
-.date img{
-
-
-    height: 2.2vh;
-    width: 5.2vw;
-
-
-}
-
-.date img , p{
-
-    padding: 3px;
-
-}
-
-
-
-}
-
-@media only screen and (min-width: 992px){
-
-
-.date{
 
     width: 3vw;
 
     top: 1%;
-    left: 86%;
+    left: 93.5%;
 
 
 
 }
 
-.date img{
-
-
-    height: 2.2vh;
-    width: 5.2vw;
-
-
-}
-
-.date img , p{
-
-    padding: 3px;
-
-}
-
-
-
-}
-
-
-@media screen and (min-width: 1200px) {
-
-
-
-    .date{
-
-
-    width: 3vw;
-
-    top: 1%;
-    left: 88%;
-
-
-
-}
 
 
 .date img{
@@ -273,114 +171,5 @@
 
 }
 
-    
-}
 
-
-@media screen and (min-width: 1380px) {
-
-
-
-.date{
-
-
-    width: 3vw;
-    font-size: 1.5em;
-
-    top: 1%;
-    left: 87%;
-
-
-
-}
-
-
-.date img{
-
-
-    height: 2.8vh;
-    width: 3vw;
-
-
-}
-
-.date img , p{
-
-    padding: 3px;
-
-}
-
-    
-}
-
-@media screen and (min-width: 1600px) {
-
-
-
-.date{
-
-
-    width: 3vw;
-    font-size: 1.75em;
-
-    top: 1%;
-    left: 87%;
-
-
-
-}
-
-
-.date img{
-
-
-    height: 2.5vh;
-    width: 2.8vw;
-
-
-}
-
-.date img , p{
-
-    padding: 3px;
-
-}
-
-    
-}
-
-@media screen and (min-width: 1920px) {
-
-
-
-.date{
-
-
-    width: 3vw;
-    font-size: 1.75em;
-
-    top: 1%;
-    left: 87%;
-
-
-
-}
-
-
-.date img{
-
-
-    height: 2.5vh;
-    width: 2.8vw;
-
-
-}
-
-.date img , p{
-
-    padding: 3px;
-
-}
-
-    
 }
