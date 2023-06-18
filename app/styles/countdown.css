@@ -116,18 +116,17 @@
 @media screen and (min-width: 1024px) {
     
 
-    .countdown{
+.countdown{
 
-    top: -8%;
-    left: 60.5%;
-
+    top: 1%;
+    left: 78%;
 }
 
 .countdown-wrapper{
 
-    width: 35vw;
-    height: 35vh;
-    font-size: 2.75em;
+    width: 20vw;
+    height: 18vh;
+    font-size: 2.6em;
 
 }
 
