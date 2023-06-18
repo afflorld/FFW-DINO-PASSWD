@@ -201,8 +201,9 @@ return (
         
         <div className="Dekstop">
  
-
-        </div>
+            <Gallery />
+ 
+         </div>
 
         <footer>
 
