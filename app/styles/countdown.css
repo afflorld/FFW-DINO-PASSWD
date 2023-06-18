@@ -118,15 +118,35 @@
 
 .countdown{
 
-    top: 1%;
-    left: 78%;
+    top: 3%;
+    left: 76%;
 }
 
 .countdown-wrapper{
 
     width: 20vw;
     height: 18vh;
-    font-size: 2.6em;
+    font-size: 1.75em;
+
+}
+
+}
+
+
+@media screen and (min-width: 1280px) {
+    
+
+.countdown{
+
+    top: 3%;
+    left: 76%;
+}
+
+.countdown-wrapper{
+
+    width: 20vw;
+    height: 18vh;
+    font-size: 1.75em;
 
 }
 

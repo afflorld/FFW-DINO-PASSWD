@@ -11,7 +11,6 @@ export default function Desktop(){
 
     useEffect(() => {
 
-
     var shop = document.getElementById("shop");
     dragElement(shop);
 
@@ -126,22 +125,6 @@ return (
 
         </div>
 
-        <div className="text1">
-
-            <div className="text-wrapper">
-
-
-                <p>_ZERO F@CKS GIVEN</p>
-                <p>_FLY AS HIGH AS YOU WANT</p>
-                <p>_WE MANIFEST IT</p>
-                <p>_FORGOT SAFETY</p> 
-                <p>_FLY WHERE U FEAR TO FLY</p>
-                <p>_F@CK YOUR PHONE</p>
-
-            </div>      
-
-        </div>            
-
         <div className="apps">
 
         </div>
@@ -175,33 +158,16 @@ return (
                 </div>
 
             </a>
+            
+         <div className="bg-text">
+
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Stvorky.png?v=1687093637"/>
 
         </div>
 
-        <div className="text2">
-
-            <div className="text-wrapper">
-
-                <p>_FFW</p>
-
-            </div>
-
         </div>
-
-        <div className="text3">
-
-            <div className="text-wrapper">
-
-                <p>_AATCH</p>
-
-            </div>
-
-        </div>
-
         
         <div className="Dekstop">
- 
-            <Gallery />
  
          </div>
 
