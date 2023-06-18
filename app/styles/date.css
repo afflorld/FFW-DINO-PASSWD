@@ -75,7 +75,7 @@
 }
 
 
-@media only screen and (min-width: 576px){
+@media only screen and (min-width: 450px){
 
 
 .date{
@@ -105,6 +105,40 @@
 }
 
 }
+
+@media only screen and (min-width: 640px){
+
+
+.date{
+
+    width: 3vw;
+
+    top: 1%;
+    left: 83%;
+
+
+
+}
+
+.date img{
+
+
+    height: 2.2vh;
+    width: 5.2vw;
+
+
+}
+
+.date img , p{
+
+    padding: 3px;
+
+}
+
+
+
+}
+
 
 
 @media only screen and (min-width: 768px){
@@ -141,19 +175,17 @@
 }
 
 @media only screen and (min-width: 1024px){
-    
+
+
 .date{
+
 
 
     width: 3vw;
 
     top: 1%;
     left: 93.5%;
-
-
-
 }
-
 
 
 .date img{
@@ -170,6 +202,5 @@
     padding: 3px;
 
 }
-
 
 }

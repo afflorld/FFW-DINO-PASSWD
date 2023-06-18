@@ -34,7 +34,7 @@
 
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 320px) {
     
 .countdown{
 
@@ -52,7 +52,28 @@
 
 }
 
-@media screen and (min-width: 576px) {
+
+@media screen and (min-width: 450px) {
+    
+
+    .countdown{
+
+    top: -8%;
+    left: 55.5%;
+}
+
+.countdown-wrapper{
+
+    width: 40vw;
+    height: 40vh;
+    font-size: 1.25em;
+
+}
+
+}
+
+
+@media screen and (min-width: 640px) {
     
 
     .countdown{
@@ -72,7 +93,7 @@
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 720px) {
     
 
     .countdown{
@@ -94,20 +115,20 @@
 
 @media screen and (min-width: 1024px) {
     
-.countdown{
 
-    top: 1%;
-    left: 78%;
+    .countdown{
+
+    top: -8%;
+    left: 60.5%;
+
 }
 
 .countdown-wrapper{
 
-    width: 20vw;
-    height: 18vh;
-
-    font-size: 2.6em;
+    width: 35vw;
+    height: 35vh;
+    font-size: 2.75em;
 
 }
-
 
 }
