@@ -247,8 +247,8 @@ footer img{
 
 .stvorky{
 
-    top: -5%;
-    left: 1%;
+    top: -10%;
+    left: 2%;
 
 
 }
@@ -256,7 +256,7 @@ footer img{
 .stvorky img{
 
 
-    width: 40vw;
+    width: 45vw;
     height: 35vh;
 
 }
@@ -275,7 +275,7 @@ footer img{
 
     font-size: 8em;
     top: 55%;
-    left: -15%;
+    left: -16%;
     transform: scale(.5, 1.5);
 
 }
