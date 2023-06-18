@@ -1,12 +1,6 @@
 .date{
 
     position: fixed;
-
-    width: 3vw;
-
-    top: 1%;
-    left: 93.5%;
-
     font-family: "inter-variable";
 
 
@@ -27,11 +21,30 @@
 
 }
 
+.date img , p{
+
+    padding: 3px;
+
+}
+
+
+@media only screen and (min-width: 320px){
+
+.date{
+
+    font-size: .4em;
+    top: 5px;
+    right: 19px;
+
+
+
+}
+
 .date img{
 
 
-    height: 2.2vh;
-    width: 2.2vw;
+    height: 12px;
+    width: 12px;
 
 
 }
@@ -42,48 +55,16 @@
 
 }
 
+}
 
-@media only screen and (min-width: 375px){
+
+@media only screen and (min-width: 776px){
 
 .date{
 
-    width: 3vw;
     font-size: .6em;
-
-    top: 1%;
-    left: 82%;
-
-
-
-}
-
-.date img{
-
-
-    height: 2.0vh;
-    width: 4.2vw;
-
-
-}
-
-.date img , p{
-
-    padding: 3px;
-
-}
-
-}
-
-
-@media only screen and (min-width: 450px){
-
-
-.date{
-
-    width: 3vw;
-
-    top: 1%;
-    left: 79.5%;
+    top: 10px;
+    right: 19px;
 
 
 
@@ -92,80 +73,9 @@
 .date img{
 
 
-    height: 2.2vh;
-    width: 5.2vw;
+    height: 15px;
+    width: 15px;
 
-
-}
-
-.date img , p{
-
-    padding: 3px;
-
-}
-
-}
-
-@media only screen and (min-width: 640px){
-
-
-.date{
-
-    width: 3vw;
-    top: 1%;
-    left: 83%;
-
-
-
-}
-
-.date img{
-
-
-    height: 2.2vh;
-    width: 5.2vw;
-
-
-}
-
-.date img , p{
-
-    padding: 3px;
-
-}
-
-
-
-}
-
-
-
-@media only screen and (min-width: 768px){
-
-
-.date{
-
-    width: 3vw;
-
-    top: 1%;
-    left: 84%;
-
-
-
-}
-
-.date img{
-
-
-    height: 2.2vh;
-    width: 5.2vw;
-
-
-}
-
-.date img , p{
-
-    padding: 3px;
 
 }
 
@@ -175,30 +85,40 @@
 
 @media only screen and (min-width: 1024px){
 
-
 .date{
 
-
     font-size: 1em;
+    top: 30px;
+    right: 39px;
 
-    top: 1%;
-    left: 88.5%;
+
+
 }
-
 
 .date img{
 
 
-    height: 2.2vh;
-    width: 2.2vw;
+    height: 25px;
+    width: 25px;
 
 
 }
 
-.date img , p{
 
-    padding: 3px;
 
 }
+
+
+@media only screen and (min-width: 1280px){
+
+.date{
+
+    font-size: 1.2em;
+    right: 59px;
+
+
+}
+
+
 
 }

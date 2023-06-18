@@ -159,11 +159,11 @@ return (
 
             </a>
             
-         <div className="bg-text">
-
-            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Stvorky.png?v=1687093637"/>
 
         </div>
+                 <div className="bg-text">
+
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Stvorky.png?v=1687093637"/>
 
         </div>
         
