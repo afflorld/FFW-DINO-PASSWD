@@ -1,6 +1,6 @@
 .countdown{
 
-    position: absolute;
+    position: fixed;
 
     background-image: url(https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Timer_border_bigger_resolution.png?v=1681664859);
     background-size: contain;
