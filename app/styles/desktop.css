@@ -354,6 +354,118 @@ footer img{
 }
 
 }
+@media only screen and (min-width: 450px){
+
+.stvorky{
+
+
+
+    top: -15%;
+    left: 1%;
+
+
+}
+
+.stvorky img{
+
+
+    width: 50vw;
+    height: 45vh;
+
+}
+
+.text1{
+
+
+    top: 20%;
+    left: 5%;
+    font-size: .6em;
+
+}
+
+.text2{
+
+
+    font-size: 9em;
+    top: 52.5%;
+    left: -10%;
+    transform: scale(.5, 1.5);
+
+}
+
+.text3{
+
+    top: 20%;
+    left: -1%;
+    font-size: 8.5em;
+
+    transform: scale(.5,1.5);
+}
+
+
+.apps{
+
+    font-size: .3em;
+
+}
+
+.apps img {
+
+    width: 8vw;
+    height: 4vh;
+
+}
+
+#shop{
+
+
+    left: 87%;
+
+    top: 20%;
+
+    text-align: center;
+
+}
+
+#files{
+
+    left: 88%;
+    top: 30%;
+
+}
+
+#instagram{
+
+
+    left: 88%;
+    top: 40%;
+
+}
+
+#tiktok{
+
+
+    left: 88.5%;
+    top: 50%;
+
+}
+
+footer{
+
+    top: 88%;
+}
+
+footer img{
+
+    width: 45vw;
+    height: 9vh;
+
+    padding: 5px;
+
+}
+
+}
+
 
 @media only screen and (min-width: 576px){
 
@@ -467,7 +579,7 @@ footer img{
 
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 640px){
 
 .stvorky{
 
