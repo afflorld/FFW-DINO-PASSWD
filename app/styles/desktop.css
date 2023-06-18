@@ -358,7 +358,7 @@ footer img{
 
 
 
-    top: -15%;
+    top: -10%;
     left: 1%;
 
 
@@ -367,8 +367,8 @@ footer img{
 .stvorky img{
 
 
-    width: 50vw;
-    height: 45vh;
+    width: 45vw;
+    height: 35vh;
 
 }
 
@@ -393,8 +393,8 @@ footer img{
 
 .text3{
 
-    top: 20%;
-    left: -1%;
+    top: 25%;
+    left: 2%;
     font-size: 8.5em;
 
     transform: scale(.5,1.5);
@@ -450,13 +450,13 @@ footer img{
 
 footer{
 
-    top: 88%;
+    top: 90%;
 }
 
 footer img{
 
-    width: 45vw;
-    height: 9vh;
+    width: 40vw;
+    height: 7vh;
 
     padding: 5px;
 
