@@ -611,7 +611,7 @@ footer img{
 .text2{
 
 
-    font-size: 12em;
+    font-size: 11em;
     top: 52.5%;
     left: -10%;
     transform: scale(.5, 1.5);
@@ -622,7 +622,7 @@ footer img{
 
     top: 20%;
     left: 2%;
-    font-size: 11em;
+    font-size: 10em;
 
     transform: scale(.5,1.5);
 }
