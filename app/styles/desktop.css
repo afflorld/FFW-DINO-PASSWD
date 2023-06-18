@@ -39,7 +39,7 @@
 
     position: fixed;
 
-    top: -30%;
+    top: -200px;
     left: 3%;
 
 
@@ -47,8 +47,7 @@
 
 .stvorky img{
 
-    max-width: 90vw;
-    max-height: 90vh;
+    max-height: 600px;
 
 
 }
@@ -87,8 +86,8 @@
 
 .apps img {
 
-    width: 3.5vw;
-    height: 7vh;
+    width: 45px;
+    height: 45px;
 
 }
 
@@ -103,32 +102,32 @@
 #shop{
 
 
-    left: 92.2%;
+    right: 20px;
 
-    top: 25%;
+    top: 275px;
 
 }
 
 #files{
 
-    left: 93.5%;
-    top: 37%;
+    right: 45px;
+    top: 400px;
 
 }
 
 #instagram{
 
 
-    left: 5%;
-    top: 75%;
+    left: 100px;
+    top: 70%;
 
 }
 
 #tiktok{
 
 
-    left: 11.5%;
-    top: 75%;
+    left: 200px;
+    top: 70%;
 
 }
 
@@ -136,8 +135,11 @@
 
 
     position: fixed;
-    top: -12.5%;
     z-index: -1;
+
+    left: 0;
+    right: 0;
+    
 
 }
 
@@ -145,9 +147,12 @@
 
 
     object-fit: contain;
+    object-position: center;
     height: 100%;
     width: 100%;
+    
 }
+
 
 footer{
 
@@ -161,7 +166,7 @@ footer{
 
     flex-wrap: nowrap;
 
-    top: 87%;
+    bottom: 40px;
 
     
 }
@@ -201,7 +206,7 @@ footer{
 
 footer img{
 
-   max-height: 11vh; 
+   max-height: 100px; 
 
 
     padding: 5px;
@@ -210,100 +215,10 @@ footer img{
 
 @media screen and (min-width: 1024px){
 
-.stvorky{
-
-    top: -15%;
-    left: 3%;
-    
-
-}
-
-.stvorky img{
-
-    max-height: 700px;
-
-
-}
-
-.apps{
-
-    font-size: .7em;
-
-}
-
-.apps img {
-
-    width: 4vw;
-    height: 4vh;
-
-}
-
-#shop{
-
-
-    left: 90.2%;
-
-    top: 25%;
-
-}
-
-#files{
-
-    left: 92.75%;
-    top: 33.5%;
-
-}
-
-#instagram{
-
-
-    left: 7.5%;
-    top: 75%;
-
-}
-
-#tiktok{
-
-
-    left: 17.5%;
-    top: 75%;
-
-}
-
 .bg-text{
 
 
-    top: 20%;
-
-}
-
-.bg-text img{
-
-
-    width: 100%;
-    height: 100%;
-}
-
-footer{
-
-    overflow: hidden !important;
-    top: 89%;
-
-    
-}
-
-.footer-img-1{
-
-
-
-    margin-left: -1%;
-}
-
-
-footer img{
-
-   max-height: 100px; 
-    padding: 5px;
+    top: 15%;
 
 }
 
@@ -311,216 +226,69 @@ footer img{
 
 @media screen and (min-width: 1280px){
 
-.stvorky{
+.bg-text{
 
-    top: -20%;
-    left: 3%;
 
-}
-
-.stvorky img{
-
-    max-height: 700px;
-
+    top: -5%;
 
 }
 
-.apps{
-
-    font-size: .7em;
-
 }
 
-.apps img {
-
-    width: 50px;
-    height: 50px;
-
-}
-
-#shop{
-
-
-    left: 90.2%;
-
-    top: 25%;
-
-}
-
-#files{
-
-    left: 92%;
-    top: 37%;
-
-}
-
-#instagram{
-
-
-    left: 8%;
-    top: 75%;
-
-}
-
-#tiktok{
-
-
-    left: 16.5%;
-    top: 75%;
-
-}
+@media screen and (min-width: 1280px) and (min-height: 1150px){
 
 .bg-text{
 
 
-    top: 5%;
-    z-index: -1;
+    top: 10%;
 
 }
 
-.bg-text img{
-
-
-    width: 100%;
-    height: 100%;
 }
 
-footer{
-
-    overflow: hidden !important;
-
-
-
-    top: 87%;
-
-    
-}
-
-.footer-img-1{
-
-
-
-    margin-left: -1%;
-}
-
-
-footer img{
-
-   max-height: 100px; 
-
-
-    padding: 5px;
-
-}
-
-
-}
-
-
-@media screen and (min-width: 1600px){
-
-.stvorky{
-
-    top: -20%;
-    left: 3%;
-
-}
-
-.stvorky img{
-
-    max-height: 700px;
-
-
-}
-
-.apps{
-
-    font-size: .7em;
-
-}
-
-.apps img {
-
-    width: 50px;
-    height: 50px;
-
-}
-
-#shop{
-
-
-    left: 92.2%;
-
-    top: 25%;
-
-}
-
-#files{
-
-    left: 93.5%;
-    top: 37%;
-
-}
-
-#instagram{
-
-
-    left: 8%;
-    top: 75%;
-
-}
-
-#tiktok{
-
-
-    left: 16.5%;
-    top: 75%;
-
-}
+@media screen and (min-width: 1500px){
 
 .bg-text{
 
 
-    top: 5%;
-    z-index: -1;
+    top: -15%;
 
 }
-
-.bg-text img{
-
-
-    width: 100%;
-    height: 100%;
-}
-
-footer{
-
-    overflow: hidden !important;
-
-
-
-    top: 87%;
-
-    
-}
-
-.footer-img-1{
-
-
-
-    margin-left: -1%;
-}
-
-
-footer img{
-
-   max-height: 100px; 
-
-
-    padding: 5px;
 
 }
 
 
+@media screen and (min-width: 1500px) and (min-height: 900px){
+
+.bg-text{
+
+
+    top: 0%;
+
 }
 
+}
+
+
+
+@media screen and (min-width: 1700px){
+
+.bg-text{
+
+
+    top: -10%;
+
+}
+
+}
+
+@media screen and (min-width: 1700px) and (min-height: 1000px){
+
+.bg-text{
+
+
+    top: 0%;
+
+}
+
+}
