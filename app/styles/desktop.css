@@ -258,8 +258,8 @@ footer img{
 .stvorky img{
 
 
-    width: 45vw;
-    height: 35vh;
+    width: 50vw;
+    height: 40vh;
 
 }
 
@@ -802,120 +802,6 @@ footer img{
 }
 
 }
-
-@media only screen and (max-width: 768px){
-
-.stvorky{
-
-
-
-    top: -6%;
-    left: 1%;
-
-
-}
-
-.stvorky img{
-
-
-    width: 35vw;
-    height: 30vh;
-
-}
-
-.text1{
-
-
-    top: 20%;
-    left: 5%;
-    font-size: .9em;
-
-}
-
-.text2{
-
-
-    font-size: 17em;
-    top: 51.5%;
-    left: -10%;
-    transform: scale(.5, 1.5);
-
-}
-
-.text3{
-
-    top: 18%;
-    left: 1%;
-    font-size: 16em;
-
-    transform: scale(.5,1.5);
-}
-
-
-.apps{
-
-    font-size: .3em;
-
-}
-
-.apps img {
-
-    width: 6vw;
-    height: 4vh;
-
-}
-
-#shop{
-
-
-    left: 89%;
-
-    top: 20%;
-
-    text-align: center;
-
-}
-
-#files{
-
-    left: 89%;
-    top: 30%;
-
-}
-
-#instagram{
-
-
-    left: 89%;
-    top: 40%;
-
-}
-
-#tiktok{
-
-
-    left: 89.5%;
-    top: 50%;
-
-}
-
-footer{
-
-    top: 89%;
-}
-
-footer img{
-
-    width: 30vw;
-    height: 8vh;
-
-    padding: 5px;
-
-}
-
-}
-
-
 
 @media only screen and (min-width: 1024px){
 
