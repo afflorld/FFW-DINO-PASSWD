@@ -81,7 +81,6 @@
     font-family: "inter-variable";
     font-weight: bold;
     text-align: center;
-
 }
 
 .apps img {
@@ -98,23 +97,6 @@
     cursor: pointer;
 
 }
-
-#shop{
-
-
-    right: 20px;
-
-    top: 275px;
-
-}
-
-#files{
-
-    right: 45px;
-    top: 400px;
-
-}
-
 
 .bg-text{
 
@@ -846,6 +828,7 @@ footer img{
 
     right: 15px;
     top: 150px;
+    left: unset;
 
 }
 
@@ -853,7 +836,7 @@ footer img{
 
     right: 30px;
     top: 225px;
-
+    left: unset;
 }
 
 #instagram{

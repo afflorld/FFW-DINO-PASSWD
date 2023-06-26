@@ -49,7 +49,7 @@ export default function Desktop(){
         pos2 = pos4 - e.clientY;
         pos3 = e.clientX;
         pos4 = e.clientY;
-        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        elmnt.style.top = (elmnt.offsetTop - pos2) +  "px";
         elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
     }
 
@@ -163,10 +163,10 @@ return (
         </div>
                  <div className="bg-text">
 
-            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Stvorky.png?v=1687093637"/>
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Stvorky_69c9a462-0e7e-457f-ae00-213484d36f2b.png?v=1687810988"/>
 
         </div>
-        
+
         <div className="Dekstop">
  
          </div>
