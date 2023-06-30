@@ -8,64 +8,55 @@ import { useEffect } from "react";
 
 export default function Desktop(){
 
+useEffect(() => {
+  var shop = document.getElementById("shop");
+  dragElement(shop);
 
-    useEffect(() => {
+  var files = document.getElementById("files");
+  dragElement(files);
 
-    var shop = document.getElementById("shop");
-    dragElement(shop);
-
-    var files = document.getElementById("files");
-    dragElement(files);
-
-    var tiktok = document.getElementById("tiktok");
-    dragElement(tiktok)
-
-    var instagram = document.getElementById("instagram");
-    dragElement(instagram);
-
-
-
-    function dragElement(elmnt) {
+  function dragElement(elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
     var startingZIndex = parseInt(elmnt.style.zIndex) || 1;
+    var containerWidth = elmnt.parentNode.clientWidth;
 
     elmnt.onmousedown = dragMouseDown;
 
     function dragMouseDown(e) {
-        e = e || window.event;
-        e.preventDefault();
-        pos3 = e.clientX;
-        pos4 = e.clientY;
-        document.onmouseup = closeDragElement;
-        document.onmousemove = elementDrag;
+      e = e || window.event;
+      e.preventDefault();
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      document.onmouseup = closeDragElement;
+      document.onmousemove = elementDrag;
 
-        elmnt.style.zIndex = startingZIndex + 1;
+      elmnt.style.zIndex = startingZIndex + 1;
     }
 
     function elementDrag(e) {
-        e = e || window.event;
-        e.preventDefault();
-        pos1 = pos3 - e.clientX;
-        pos2 = pos4 - e.clientY;
-        pos3 = e.clientX;
-        pos4 = e.clientY;
-        elmnt.style.top = (elmnt.offsetTop - pos2) +  "px";
-        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+      e = e || window.event;
+      e.preventDefault();
+      pos1 = pos3 - e.clientX;
+      pos2 = pos4 - e.clientY;
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+
+      var offsetX = pos1;
+      var offsetY = pos2;
+
+      var initialRight = containerWidth - elmnt.offsetLeft - elmnt.offsetWidth;
+      elmnt.style.right = `${initialRight + offsetX}px`;
+      elmnt.style.top = `${elmnt.offsetTop - offsetY}px`;
     }
 
     function closeDragElement() {
-        document.onmouseup = null;
-        document.onmousemove = null;
+      document.onmouseup = null;
+      document.onmousemove = null;
 
-        elmnt.style.zIndex = 1;
-
-        
+      elmnt.style.zIndex = 1;
     }
-    }
-
-
-
-    })
+  }
+}, []);
 
 
 return (
@@ -131,7 +122,7 @@ return (
 
         <div className="apps">
 
-            <a onDoubleClick={() => window.open("https://www.instagram.com/fortyfourwings", "blank")}>
+            <a href="https://www.instagram.com/fortyfourwings/">
 
                 <div id="instagram">
 
@@ -145,7 +136,7 @@ return (
 
             </a>
 
-            <a onDoubleClick={() => window.open("https://www.tiktok.com/@fortyfourwings", "blank")}>
+            <a href="https://www.tiktok.com/@fortyfourwings">
 
                 <div id="tiktok">
 

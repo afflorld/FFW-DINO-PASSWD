@@ -83,6 +83,14 @@
     text-align: center;
 }
 
+.apps a {
+
+
+    text-decoration: none;
+    color: black;
+
+}
+
 .apps img {
 
     width: 45px;
@@ -269,8 +277,6 @@ footer img{
 
 
 #shop{
-
-
 
     top: 100px;
 
