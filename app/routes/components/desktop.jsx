@@ -243,14 +243,14 @@ return (
 
                 <a href="https://www.tiktok.com/@fortyfourwings">
 
-                    <div className="item-container">
+                <div className="item-container">
 
-                        <div className="center">
+                    <div className="center">
 
-                            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/tiktok_logo.png?v=1681664860"></img>
-                        </div>
-
+                        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/tiktok_logo.png?v=1681664860"></img>
                     </div>
+
+                </div>
 
                 </a>
                 <div className="item-container">
