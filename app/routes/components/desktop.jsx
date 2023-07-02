@@ -152,9 +152,11 @@ return (
             
 
         </div>
-                 <div className="bg-text">
+        
+        <div className="bg-text">
 
-            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Stvorky_69c9a462-0e7e-457f-ae00-213484d36f2b.png?v=1687810988"/>
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Stvorky_69c9a462-0e7e-457f-ae00-213484d36f2b.png?v=1687810988" className="image1"/>
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Stvorky2.png?v=1687811025" className="image2"/>
 
         </div>
 

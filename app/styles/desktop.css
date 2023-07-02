@@ -120,7 +120,6 @@
 
 .bg-text img{
 
-
     object-fit: contain;
     object-position: center;
     height: 100%;
@@ -188,7 +187,6 @@ footer img{
 
 }
 
-
 @media screen and (min-width: 320px){
 
 .stvorky{
@@ -206,52 +204,18 @@ footer img{
 
 .apps{
 
-    font-size: 0.2em;
-
+    display: none;
 }
-
-
-.apps img {
-
-    width: 15px;
-    height: 15px;
-
-}
-
-#shop{
-
-
-    right: 4px;
-    top: 175px;
-
-}
-
-#files{
-
-    right: 12px;
-    top: 235px;
-
-}
-
-#instagram{
-
-    right: 6.5px;
-
-    top: 290px;
-}
-
-#tiktok{
-
-    right: 9px;
-    top: 340px;
-
-}
-
 
 .bg-text{
 
+    top: 10%;
 
-    top: 20%;
+}
+
+.bg-text .image1{
+
+    display: none;
 
 }
 
@@ -273,34 +237,6 @@ footer img{
 
 }
 
-@media screen and (min-width: 320px) and (max-height: 425px){
-
-
-#shop{
-
-    top: 100px;
-
-}
-
-#files{
-
-    top: 140px;
-
-}
-
-#instagram{
-
-
-    top: 185px;
-}
-
-#tiktok{
-
-    top: 230px;
-
-}
-
-}
 
 @media screen and (min-width: 450px){
 
@@ -317,55 +253,10 @@ footer img{
 
 }
 
-.apps{
-
-    font-size: 0.25em;
-
-}
-
-
-.apps img {
-
-    width: 20px;
-    height: 20px;
-
-}
-
-#shop{
-
-
-    right: 5px;
-
-    top: 175px;
-
-}
-
-#files{
-
-    right: 14px;
-    top: 235px;
-
-}
-
-#instagram{
-
-    right: 9.5px;
-
-    top: 290px;
-}
-
-#tiktok{
-
-    right: 12.5px;
-    top: 355px;
-
-}
-
-
 .bg-text{
 
 
-    top: 20%;
+    top: 5%;
 
 }
 
@@ -402,55 +293,16 @@ footer img{
 
 }
 
-.apps{
-
-    font-size: 0.35em;
-
-}
-
-
-.apps img {
-
-    width: 30px;
-    height: 30px;
-
-}
-
-#shop{
-
-
-    right: 5px;
-
-    top: 250px;
-
-}
-
-#files{
-
-    right: 16px;
-    top: 310px;
-
-}
-
-#instagram{
-
-    right: 11px;
-
-    top: 365px;
-}
-
-#tiktok{
-
-    right: 15px;
-    top: 420px;
-
-}
-
-
 .bg-text{
 
+    top: 5%;
 
-    top: 20%;
+}
+
+.bg-text .image2{
+
+    max-height: 700px;
+
 
 }
 
@@ -473,41 +325,6 @@ footer img{
 
 }
 
-@media screen and (min-width: 576px) and (max-height: 550px){
-
-#shop{
-
-
-    right: 5px;
-    top: 150px;
-
-}
-
-#files{
-
-    right: 16px;
-    top: 210px;
-
-}
-
-#instagram{
-
-    right: 11px;
-
-    top: 265px;
-}
-
-#tiktok{
-
-    right: 15px;
-    top: 320px;
-
-}
-
-
-
-}
-
 @media screen and (min-width: 576px) and (max-height: 450px){
 
 
@@ -523,51 +340,6 @@ footer img{
 
 
 }
-
-.apps{
-
-    font-size: 0.35em;
-
-}
-
-
-.apps img {
-
-    width: 20px;
-    height: 20px;
-
-}
-
-#shop{
-
-
-    right: 5px;
-
-    top: 100px;
-
-}
-
-#files{
-
-    right: 20px;
-    top: 140px;
-
-}
-
-#instagram{
-
-    right: 11px;
-
-    top: 185px;
-}
-
-#tiktok{
-
-    right: 17px;
-    top: 230px;
-
-}
-
 
 .bg-text{
 
@@ -608,55 +380,10 @@ footer img{
 
 }
 
-.apps{
-
-    font-size: 0.35em;
-
-}
-
-
-.apps img {
-
-    width: 30px;
-    height: 30px;
-
-}
-
-#shop{
-
-
-    right: 5px;
-
-    top: 250px;
-
-}
-
-#files{
-
-    right: 16px;
-    top: 310px;
-
-}
-
-#instagram{
-
-    right: 11px;
-
-    top: 365px;
-}
-
-#tiktok{
-
-    right: 15px;
-    top: 420px;
-
-}
-
-
 .bg-text{
 
 
-    top: 20%;
+    top: 5%;
 
 }
 
@@ -678,46 +405,11 @@ footer img{
 
 }
 
-@media screen and (min-width: 640px) and (max-height: 550px){
-
-#shop{
-
-
-    right: 5px;
-    top: 150px;
-
-}
-
-#files{
-
-    right: 16px;
-    top: 210px;
-
-}
-
-#instagram{
-
-    right: 11px;
-
-    top: 265px;
-}
-
-#tiktok{
-
-    right: 15px;
-    top: 320px;
-
-}
-
-
-
-}
-
 @media screen and (min-width: 640px) and (max-height: 450px){
 
 
 
-    .stvorky{
+.stvorky{
 
     top: -100px;
 
@@ -726,51 +418,6 @@ footer img{
 .stvorky img{
 
     max-height: 300px;
-
-
-}
-
-.apps{
-
-    font-size: 0.35em;
-
-}
-
-
-.apps img {
-
-    width: 30px;
-    height: 30px;
-
-}
-
-#shop{
-
-
-    right: 5px;
-
-    top: 100px;
-
-}
-
-#files{
-
-    right: 16px;
-    top: 160px;
-
-}
-
-#instagram{
-
-    right: 11px;
-
-    top: 215px;
-}
-
-#tiktok{
-
-    right: 15px;
-    top: 270px;
 
 }
 
@@ -800,6 +447,8 @@ footer img{
 }
 
 
+/*tablet and pc */
+
 @media screen and (min-width:768px){
 
 .stvorky{
@@ -818,6 +467,7 @@ footer img{
 .apps{
 
     font-size: 0.45em;
+    display: block;
 
 }
 
@@ -869,6 +519,18 @@ footer img{
 
 }
 
+.bg-text .image2{
+
+    display: none;
+
+}
+
+.bg-text .image1{
+
+    display: block;
+
+}
+
 footer{
 
     bottom: 10px;
@@ -887,6 +549,7 @@ footer img{
 
 }
 
+/*Pc version*/
 
 @media screen and (min-width:768px) and (max-height: 600px){
 
