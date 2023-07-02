@@ -228,22 +228,21 @@ return (
 
             <div className="footer-apps">
 
-                <a href="https://www.instagram.com/fortyfourwings/">
+             
 
-                    <div className="item=container">
+                <div className="item-container" onClick={() => {window.open("https://www.instagram.com/fortyfourwings/",'_blank')}}>
 
-                        <div className="center">
+                    <div className="center">
 
-                            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Instagram-Logo.png?v=1681664860"></img>
+                        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Instagram-Logo.png?v=1681664860"></img>
 
-                        </div>
                     </div>
+                </div>
 
-                </a>
+            
 
-                <a href="https://www.tiktok.com/@fortyfourwings">
 
-                <div className="item-container">
+                <div className="item-container" onClick={() => {window.open("https://www.instagram.com/fortyfourwings/",'_blank')}}>
 
                     <div className="center">
 
@@ -252,7 +251,6 @@ return (
 
                 </div>
 
-                </a>
                 <div className="item-container">
 
                     <div className="center">

@@ -275,7 +275,10 @@ footer img{
 
 .item-container{
 
-    margin-left: 5vw;
+    margin: 2.5vw;
+    margin-top: unset;
+    margin-bottom: unset;
+    cursor: pointer;
 
 }
 
