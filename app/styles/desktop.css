@@ -224,7 +224,7 @@ footer img{
 
 .bg-text{
 
-    top: 10%;
+    top: 5%;
 
 }
 
@@ -259,24 +259,31 @@ footer img{
 .footer-img{
 
     width: 100%;
-    background-color: #27463e;
 
 }
 
 
 .footer-apps{
-
+    
+    width: 100%;
     justify-content: center;
+    background-color: #27463e;
+
 
 }
+
 
 .item-container{
 
-    padding-left: 5px;
+    margin-left: 5vw;
 
 }
 
+.item-container img{
 
+    max-height: 50px;
+    
+}
 }
 
 
