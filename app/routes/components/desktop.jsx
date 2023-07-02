@@ -166,60 +166,115 @@ return (
 
         <footer>
 
-            <div className="footer-img-1">
+            <div className="footer-img">
 
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/1_NOV_2021.png?v=1681664659"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/2_NOV_2021.png?v=1681664659"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/3_NOV_2021.png?v=1681664659"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/4_MAY_2022.png?v=1681664659"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/4_1_MAY_2022.png?v=1681664659"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/4_2_MAY_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/4_3_MAY_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/5_JUNE_2022.png?v=1681664659"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/6_JULY_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/7_JULY_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/8_JULY_2022.png?v=1681664661"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/9_CT_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/10_NOV_2022.png?v=1681664661"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/11_NOV_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/12_NOV_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/13_NOV_2022.png?v=1681664661"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/14_NOV_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/15_NOV_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/16_NOV_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/17_DEC_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/18_APRIL_2023.png?v=1681664661"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/19_ERROR_444.png?v=1681664661"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/20.png?v=1681664755"></img>
-            
+                <div className="footer-img-1">
+
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/1_NOV_2021.png?v=1681664659"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/2_NOV_2021.png?v=1681664659"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/3_NOV_2021.png?v=1681664659"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/4_MAY_2022.png?v=1681664659"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/4_1_MAY_2022.png?v=1681664659"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/4_2_MAY_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/4_3_MAY_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/5_JUNE_2022.png?v=1681664659"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/6_JULY_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/7_JULY_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/8_JULY_2022.png?v=1681664661"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/9_CT_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/10_NOV_2022.png?v=1681664661"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/11_NOV_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/12_NOV_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/13_NOV_2022.png?v=1681664661"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/14_NOV_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/15_NOV_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/16_NOV_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/17_DEC_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/18_APRIL_2023.png?v=1681664661"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/19_ERROR_444.png?v=1681664661"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/20.png?v=1681664755"></img>
+                
+                </div>
+
+                <div className="footer-img-2">
+
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/1_NOV_2021.png?v=1681664659"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/2_NOV_2021.png?v=1681664659"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/3_NOV_2021.png?v=1681664659"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/4_MAY_2022.png?v=1681664659"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/4_1_MAY_2022.png?v=1681664659"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/4_2_MAY_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/4_3_MAY_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/5_JUNE_2022.png?v=1681664659"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/6_JULY_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/7_JULY_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/8_JULY_2022.png?v=1681664661"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/9_CT_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/10_NOV_2022.png?v=1681664661"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/11_NOV_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/12_NOV_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/13_NOV_2022.png?v=1681664661"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/14_NOV_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/15_NOV_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/16_NOV_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/17_DEC_2022.png?v=1681664660"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/18_APRIL_2023.png?v=1681664661"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/19_ERROR_444.png?v=1681664661"></img>
+                    <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/20.png?v=1681664755"></img>
+                
+                </div>
+
             </div>
 
-            <div className="footer-img-2">
+            <div className="footer-apps">
 
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/1_NOV_2021.png?v=1681664659"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/2_NOV_2021.png?v=1681664659"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/3_NOV_2021.png?v=1681664659"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/4_MAY_2022.png?v=1681664659"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/4_1_MAY_2022.png?v=1681664659"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/4_2_MAY_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/4_3_MAY_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/5_JUNE_2022.png?v=1681664659"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/6_JULY_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/7_JULY_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/8_JULY_2022.png?v=1681664661"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/9_CT_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/10_NOV_2022.png?v=1681664661"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/11_NOV_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/12_NOV_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/13_NOV_2022.png?v=1681664661"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/14_NOV_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/15_NOV_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/16_NOV_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/17_DEC_2022.png?v=1681664660"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/18_APRIL_2023.png?v=1681664661"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/19_ERROR_444.png?v=1681664661"></img>
-                <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/20.png?v=1681664755"></img>
+                <a href="https://www.instagram.com/fortyfourwings/">
+
+                    <div className="item=container">
+
+                        <div className="center">
+
+                            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Instagram-Logo.png?v=1681664860"></img>
+
+                        </div>
+                    </div>
+
+                </a>
+
+                <a href="https://www.tiktok.com/@fortyfourwings">
+
+                    <div className="item-container">
+
+                        <div className="center">
+
+                            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/tiktok_logo.png?v=1681664860"></img>
+                        </div>
+
+                    </div>
+
+                </a>
+                <div className="item-container">
+
+                    <div className="center">
+
+                        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/com.apple.Passbook.png?v=1681664860"></img>
+
+
+                    </div>
             
+                </div>
+
+                <div className="item-container">
+
+                    <div className="center">
+
+                        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/com.apple.DocumentsApp.png?v=1681664860"></img>
+
+
+                    </div>
+
+                </div>
+
             </div>
 
         </footer>
