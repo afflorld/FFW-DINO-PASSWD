@@ -128,7 +128,7 @@ return (
 
                     <div className="center">
 
-                        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Instagram-Logo.png?v=1681664860"></img>
+                        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Instagram-Logo.png?v=1688311784"></img>
                         <p>INSTAGRAM</p>
 
                     </div>
@@ -142,7 +142,7 @@ return (
 
                     <div className="center">
 
-                        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/tiktok_logo.png?v=1681664860"></img>
+                        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/tiktok_logo.png?v=1688311795"></img>
                         <p>TIKTOK</p>
                     </div>
 
@@ -234,7 +234,7 @@ return (
 
                     <div className="center">
 
-                        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Instagram-Logo.png?v=1681664860"></img>
+                        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Instagram-Logo.png?v=1688311784"></img>
 
                     </div>
                 </div>
@@ -242,11 +242,12 @@ return (
             
 
 
-                <div className="item-container" onClick={() => {window.open("https://www.instagram.com/fortyfourwings/",'_blank')}}>
+                <div className="item-container" onClick={() => {window.open("https://www.tiktok.com/@fortyfourwings",'_blank')}}>
 
                     <div className="center">
 
-                        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/tiktok_logo.png?v=1681664860"></img>
+                        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/tiktok_logo.png?v=1688311795"></img>
+
                     </div>
 
                 </div>

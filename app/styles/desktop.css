@@ -241,8 +241,8 @@ footer{
 
     box-sizing: border-box;
     width: 90%;
-    border-radius: 40px;
-    background-color: #183731;
+    border-radius: 30px;
+    background-color: #d8d8d8;
     box-shadow:  0 1px 0 rgba(0,0,0,.9),0 4px 8px 0 rgba(0,0,0,.3),0 5px 35px 0 rgba(0,0,0,.2);
     
 
@@ -267,8 +267,6 @@ footer img{
     
     width: 100%;
     justify-content: center;
-    background-color: #27463e;
-
 
 }
 
@@ -285,6 +283,9 @@ footer img{
 .item-container img{
 
     max-height: 50px;
+    box-shadow:  0 1px 0 rgba(0,0,0,.9),0 .1px .1px 0 rgba(0,0,0,.3),0 .1px .1px 0 rgba(0,0,0,.2);
+
+
     
 }
 }
