@@ -155,8 +155,8 @@ return (
         
         <div className="bg-text">
 
-            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Stvorky_69c9a462-0e7e-457f-ae00-213484d36f2b.png?v=1687810988" className="image1"/>
-            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Stvorky2.png?v=1687811025" className="image2"/>
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Stvorky_69c9a462-0e7e-457f-ae00-213484d36f2b.png?v=1689106237" className="image1"/>
+            <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/Stvorky2.png?v=1689106254" className="image2"/>
 
         </div>
 
@@ -228,6 +228,18 @@ return (
 
             <div className="footer-apps">
 
+
+                <div className="item-container">
+
+                    <div className="center">
+
+                        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/com.apple.Passbook.png?v=1681664860"></img>
+
+
+                    </div>
+            
+                </div>
+
              
 
                 <div className="item-container" onClick={() => {window.open("https://www.instagram.com/fortyfourwings/",'_blank')}}>
@@ -250,17 +262,6 @@ return (
 
                     </div>
 
-                </div>
-
-                <div className="item-container">
-
-                    <div className="center">
-
-                        <img src="https://cdn.shopify.com/s/files/1/0671/7338/4483/files/com.apple.Passbook.png?v=1681664860"></img>
-
-
-                    </div>
-            
                 </div>
 
                 <div className="item-container">

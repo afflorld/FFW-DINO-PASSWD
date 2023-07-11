@@ -290,8 +290,6 @@ footer img{
 }
 }
 
-
-
 @media screen and (min-width: 320px) and (max-height: 580px){
 
 
@@ -306,6 +304,27 @@ footer img{
         top: 10%;
 
     }
+
+    footer{
+
+        width: 80%;
+        left: 10vw;
+        
+    }
+
+    .footer-img img{
+
+        max-height: 40px;
+
+    }
+
+    .footer-apps img{
+
+        max-height: 35px;
+
+    }
+
+
 }
 
 @media screen and (min-width: 320px) and (max-height: 490px){
@@ -322,101 +341,233 @@ footer img{
         top: 15%;
 
     }
+
+        footer{
+
+        width: 60%;
+        left: 20vw;
+        
+    }
+
+    .footer-img img{
+
+        max-height: 25px;
+
+    }
+
+    .footer-apps img{
+
+        max-height: 25px;
+
+    }
+
+    .item-container{
+
+        margin: 2vw;
+        margin-top: unset;
+        margin-bottom: unset;
+        
+    }
+
 }
 
 
 @media screen and (min-width: 450px){
 
-.stvorky{
+.bg-text img{
 
-    top: -100px;
+        height: 700px;
 
-}
+    }
 
-.stvorky img{
+    .bg-text{
 
-    max-height: 300px;
+        top: 5%;
 
+    }
 
-}
+    footer{
 
-.bg-text{
+        width: 70%;
+        left: 15vw;
+        
+    }
 
+    .footer-img img{
 
-    top: 5%;
+        max-height: 45px;
 
-}
+    }
 
-footer{
+    .footer-apps img{
 
-    bottom: 10px;
+        max-height: 40px;
 
-}
+    }
 
-footer img{
-
-   max-height: 50px; 
-
-
-    padding: 5px;
-
-}
-
-.item-container img{
-
-
-    max-height: 50px;
-
-}
 
 
 }
 
-@media screen and (min-width: 320px) and (max-height: 580px){
-}
+@media screen and (min-width: 450px) and (max-height: 780px){
 
+
+    .bg-text img{
+
+        height: 600px;
+
+    }
+
+    .bg-text{
+
+        top: 7.5%;
+
+    }
+
+    footer{
+
+        width: 60%;
+        left: 20vw;
+        
+    }
+
+    .footer-img img{
+
+        max-height: 40px;
+
+    }
+
+    .footer-apps img{
+
+        max-height: 35px;
+
+    }
+
+    .item-container{
+
+        margin: 2vw;
+        margin-top: unset;
+        margin-bottom: unset;
+
+    }
+
+}    
+
+@media screen and (min-width: 450px) and (max-height: 640px){
+
+
+    .bg-text img{
+
+        height: 400px;
+
+    }
+
+    .bg-text{
+
+        top: 7.5%;
+
+    }
+
+    footer{
+
+        width: 60%;
+        left: 20vw;
+        
+    }
+
+    .footer-img img{
+
+        max-height: 40px;
+
+    }
+
+    .footer-apps img{
+
+        max-height: 35px;
+
+    }
+
+    .item-container{
+
+        margin: 2vw;
+        margin-top: unset;
+        margin-bottom: unset;
+
+    }
+
+}    
+
+
+
+
+@media screen and (min-width: 450px) and (max-height: 550px){
+
+    .bg-text img{
+
+        height: 400px;
+
+    }
+
+    .bg-text{
+
+        top: 7.5%;
+
+    }
+
+    footer{
+
+        width: 60%;
+        left: 20vw;
+        
+    }
+
+    .footer-img img{
+
+        max-height: 35px;
+
+    }
+
+    .footer-apps img{
+
+        max-height: 30px;
+
+    }
+
+
+}
 @media screen and (min-width: 576px){
 
-.stvorky{
+.bg-text img{
 
-    top: -100px;
+        height: 700px;
 
-}
+    }
 
-.stvorky img{
+    .bg-text{
 
-    max-height: 300px;
+        top: 5%;
 
+    }
 
-}
+    footer{
 
-.bg-text{
+        width: 60%;
+        left: 20vw;
+        
+    }
 
-    top: 5%;
+    .footer-img img{
 
-}
+        max-height: 50px;
 
-.bg-text .image2{
+    }
 
-    max-height: 700px;
+    .footer-apps img{
 
+        max-height: 45px;
 
-}
+    }
 
-footer{
-
-    bottom: 10px;
-
-}
-
-footer img{
-
-   max-height: 50px; 
-
-
-    padding: 5px;
-
-}
 
 
 
@@ -461,6 +612,94 @@ footer img{
 }
 
 }
+
+@media screen and (min-width: 576px) and (max-height: 780px){
+
+
+    .bg-text img{
+
+        height: 600px;
+
+    }
+
+    .bg-text{
+
+        top: 7.5%;
+
+    }
+
+    footer{
+
+        width: 60%;
+        left: 20vw;
+        
+    }
+
+    .footer-img img{
+
+        max-height: 50px;
+
+    }
+
+    .footer-apps img{
+
+        max-height: 45px;
+
+    }
+
+    .item-container{
+
+        margin: 2vw;
+        margin-top: unset;
+        margin-bottom: unset;
+
+    }
+
+}    
+
+@media screen and (min-width: 576px) and (max-height: 660px){
+
+
+    .bg-text img{
+
+        height: 500px;
+
+    }
+
+    .bg-text{
+
+        top: 7.5%;
+
+    }
+
+    footer{
+
+        width: 50%;
+        left: 25vw;
+        
+    }
+
+    .footer-img img{
+
+        max-height: 40px;
+
+    }
+
+    .footer-apps img{
+
+        max-height: 35px;
+
+    }
+
+    .item-container{
+
+        margin: 2vw;
+        margin-top: unset;
+        margin-bottom: unset;
+
+    }
+
+}    
 
 @media screen and (min-width: 640px){
 
@@ -547,6 +786,16 @@ footer img{
 /*tablet and pc */
 
 @media screen and (min-width:768px){
+
+.bg-text img{
+
+    max-height: unset;
+    height: 100%;
+    width: 100%;
+    
+
+
+}
 
 .stvorky{
 
